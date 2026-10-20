@@ -1,0 +1,14 @@
+{
+  "name": "adswipefile",
+  "owner": {
+    "name": "AdSwipeFile",
+    "email": "hello@adswipefile.com",
+    "url": "https://adswipefile.com"
+  },
+  "plugins": [
+    {
+      "name": "adswipefile",
+      "source": "./"
+    }
+  ]
+}

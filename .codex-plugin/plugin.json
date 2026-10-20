@@ -1,0 +1,58 @@
+{
+  "name": "adswipefile",
+  "version": "1.0.0",
+  "description": "Ad creative research from AdSwipeFile: search a library of winning ads from Meta, TikTok, LinkedIn and more by brand, niche and format, read an ad's copy and audiences, and pull real hooks and angles to adapt, each linked to the ad's page.",
+  "author": {
+    "name": "AdSwipeFile",
+    "email": "hello@adswipefile.com",
+    "url": "https://adswipefile.com"
+  },
+  "homepage": "https://adswipefile.com/docs/mcp",
+  "repository": "https://github.com/adswipefile/adswipefile-plugin",
+  "license": "MIT",
+  "keywords": [
+    "ads",
+    "ad creative",
+    "swipe file",
+    "ad library",
+    "ad examples",
+    "facebook ads",
+    "meta ads",
+    "tiktok ads",
+    "linkedin ads",
+    "ugc",
+    "hooks",
+    "copywriting",
+    "marketing",
+    "competitor research"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "AdSwipeFile",
+    "shortDescription": "Winning ads by brand and niche",
+    "longDescription": "Find real ad creative to learn from. AdSwipeFile is a library of winning ads from top brands on Meta (Facebook, Instagram), TikTok, LinkedIn and more, filed by brand, niche and format.\n\nAsk for examples in a niche such as beauty, supplements or software, or in a format such as UGC, before and after, testimonial or comparison. See what a brand advertises and which angles and offers it repeats. Read an ad's copy and audiences, then have the hooks behind it adapted for your own product. Review the ads you saved on adswipefile.com and what they have in common.\n\nEvery ad comes with a link to its page, so you can see the creative itself.\n\nAdSwipeFile is a reference library: it holds no spend, reach or performance figures, cannot run or buy ads, and does not generate images or video. It is a curated collection updated by periodic imports, not a live feed of Meta's or TikTok's ad libraries. Every tool is read-only. Connecting needs a free AdSwipeFile account; each tool call counts against the account's monthly allowance, and on some plans an ad's copy is shown only after an upgrade on adswipefile.com.",
+    "developerName": "AdSwipeFile",
+    "category": "Productivity",
+    "capabilities": [
+      "Search ads, brands, niches and formats",
+      "Newest ads by brand, niche and format",
+      "An ad's copy, audiences and formats",
+      "Brand teardowns: formats, angles, offers",
+      "Hooks adapted from real ads for your product",
+      "Your saved ads and what they share"
+    ],
+    "websiteURL": "https://adswipefile.com",
+    "supportURL": "https://adswipefile.com/contact",
+    "privacyPolicyURL": "https://adswipefile.com/privacy",
+    "termsOfServiceURL": "https://adswipefile.com/terms",
+    "defaultPrompt": [
+      "Show me 5 recent UGC ads from beauty brands, with links.",
+      "What does Liquid Death advertise, and which angles does it repeat?",
+      "Find testimonial ads for supplements and write 3 hooks for my product."
+    ],
+    "brandColor": "#00FF94",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}

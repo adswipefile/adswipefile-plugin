@@ -1,0 +1,17 @@
+{
+  "name": "adswipefile",
+  "description": "Winning ad creative for Claude: search ads from Meta, TikTok, LinkedIn and more by brand, niche and format.",
+  "owner": {
+    "name": "AdSwipeFile",
+    "email": "hello@adswipefile.com",
+    "url": "https://adswipefile.com"
+  },
+  "plugins": [
+    {
+      "name": "adswipefile",
+      "source": "./",
+      "description": "Ad creative research from AdSwipeFile: search a library of winning ads from Meta, TikTok, LinkedIn and more by brand, niche and format, read an ad's copy and audiences, and pull real hooks and angles to adapt, each linked to the ad's page.",
+      "version": "1.0.0"
+    }
+  ]
+}

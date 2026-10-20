@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "adswipefile": {
+      "type": "http",
+      "url": "https://adswipefile.com/api/mcp"
+    }
+  }
+}

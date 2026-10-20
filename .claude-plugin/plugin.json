@@ -1,0 +1,35 @@
+{
+  "name": "adswipefile",
+  "displayName": "AdSwipeFile",
+  "version": "1.0.0",
+  "description": "Ad creative research from AdSwipeFile: search a library of winning ads from Meta, TikTok, LinkedIn and more by brand, niche and format, read an ad's copy and audiences, and pull real hooks and angles to adapt, each linked to the ad's page.",
+  "author": {
+    "name": "AdSwipeFile",
+    "email": "hello@adswipefile.com",
+    "url": "https://adswipefile.com"
+  },
+  "homepage": "https://adswipefile.com/docs/mcp",
+  "repository": "https://github.com/adswipefile/adswipefile-plugin",
+  "license": "MIT",
+  "keywords": [
+    "ads",
+    "ad creative",
+    "swipe file",
+    "ad library",
+    "ad examples",
+    "facebook ads",
+    "meta ads",
+    "tiktok ads",
+    "linkedin ads",
+    "ugc",
+    "hooks",
+    "copywriting",
+    "marketing",
+    "competitor research"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://adswipefile.com/docs/mcp",
+  "supportUrl": "https://adswipefile.com/contact",
+  "privacyPolicyUrl": "https://adswipefile.com/privacy",
+  "termsOfServiceUrl": "https://adswipefile.com/terms"
+}
