@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://adswipefile.com/docs/mcp
+    about: Connecting the MCP server and the tool reference.
+  - name: Account or data questions
+    url: https://adswipefile.com/contact
+    about: Use the contact page. An issue here is public, and those questions are not.
+  - name: Security vulnerability
+    url: https://github.com/adswipefile/adswipefile-plugin/blob/main/SECURITY.md
+    about: Report privately by email. Never in an issue.
