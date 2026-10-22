@@ -10,8 +10,8 @@ description: Summarize what a brand advertises in AdSwipeFile, the formats, angl
 2. Call `list_ads` with the brand slug (`limit` 20 to 30). Count the formats
    and niches across the results.
 3. Read a sample of five to eight ads with `get_ad`, spread across the formats
-   you counted, for their copy and audiences. Every call counts against the
-   account's monthly allowance, so do not read every ad.
+   you counted, for their copy and audiences. Keep to that sample; do not
+   read every ad.
 4. Report:
    - **Formats**: which ones the brand leans on, with counts from step 2.
    - **Angles and hooks**: the recurring promises, pains and openings, each
@@ -26,5 +26,5 @@ description: Summarize what a brand advertises in AdSwipeFile, the formats, angl
   brand has run.
 - The library has no spend or performance data. Do not call an ad a winner, a
   top performer or a scaled ad because it appears more than once.
-- If `get_ad` returns no copy and a line on how to unlock it, base the angles
-  on the ad's name, description and formats, and pass that line on once.
+- If `get_ad` returns an ad without its copy, with a line saying so, base the
+  angles on the ad's name, description and formats, and pass that line on once.

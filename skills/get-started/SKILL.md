@@ -12,8 +12,7 @@ Explicit user instructions take priority over this guidance.
 
 - For "set up", "get started" or "is it connected", call `list_niches` once.
   If it answers, the connection works: say so and name a few niches it returned.
-  Every tool call counts against the account's monthly allowance, so do not
-  call more tools just to check.
+  Do not call more tools just to check.
 - If tools are unavailable or sign-in fails, say the connection is not
   verified and direct the user to connect or reconnect AdSwipeFile in the host.
   Do not claim the plugin is ready because this skill loaded.
@@ -23,11 +22,12 @@ Explicit user instructions take priority over this guidance.
 
 ## What to say
 
-- AdSwipeFile is a library of winning ads from top brands on Meta (Facebook,
-  Instagram), TikTok, LinkedIn and more, filed by brand, niche (industry) and
+- AdSwipeFile is a curated library of real ads from brands on Meta (Facebook,
+  Instagram), TikTok and other platforms, filed by brand, niche (industry) and
   format (UGC, before and after, testimonial, comparison…).
 - Each ad has its brand, niche, formats, audiences, an image and a page link.
-  Its copy may need a paid plan; when `get_ad` says so, pass that line on.
+  When `get_ad` returns an ad without its copy, it adds a line saying so: pass
+  that line on.
 - Every tool is read-only. Signing in also lets it list the ads the user saved
   on adswipefile.com.
 

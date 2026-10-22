@@ -17,7 +17,7 @@ description: List the ads the user saved on adswipefile.com and find what they h
 
 - The plugin is read-only. It cannot save, remove or organize ads into boards;
   point the user to adswipefile.com for that.
-- Do not read every saved ad with `get_ad`: each call counts against the
-  account's monthly allowance. Read a few that represent the patterns.
+- Do not read every saved ad with `get_ad`; read a few that represent the
+  patterns.
 - Saved ads are the user's own choices. Describe them; do not rank them as
   better or worse performers, since the library has no performance data.

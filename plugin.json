@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "adswipefile",
-  "version": "1.0.0",
-  "description": "Ad creative research from AdSwipeFile: search a library of winning ads from Meta, TikTok, LinkedIn and more by brand, niche and format, read an ad's copy and audiences, and pull real hooks and angles to adapt, each linked to the ad's page.",
+  "version": "1.1.4",
+  "description": "Ad creative research from AdSwipeFile: search a curated library of real ads from Meta, TikTok and other platforms by brand, niche and format, read an ad's audiences and copy, and study its hooks and angles, each linked to the ad's page.",
   "author": {
     "name": "AdSwipeFile",
     "email": "hello@adswipefile.com",
@@ -19,7 +19,6 @@
     "facebook ads",
     "meta ads",
     "tiktok ads",
-    "linkedin ads",
     "ugc",
     "hooks",
     "copywriting",
@@ -30,17 +29,17 @@
     "com.openai": {
       "interface": {
         "displayName": "AdSwipeFile",
-        "shortDescription": "Winning ads by brand and niche",
-        "longDescription": "Find real ad creative to learn from. AdSwipeFile is a library of winning ads from top brands on Meta (Facebook, Instagram), TikTok, LinkedIn and more, filed by brand, niche and format.\n\nAsk for examples in a niche such as beauty, supplements or software, or in a format such as UGC, before and after, testimonial or comparison. See what a brand advertises and which angles and offers it repeats. Read an ad's copy and audiences, then have the hooks behind it adapted for your own product. Review the ads you saved on adswipefile.com and what they have in common.\n\nEvery ad comes with a link to its page, so you can see the creative itself.\n\nAdSwipeFile is a reference library: it holds no spend, reach or performance figures, cannot run or buy ads, and does not generate images or video. It is a curated collection updated by periodic imports, not a live feed of Meta's or TikTok's ad libraries. Every tool is read-only. Connecting needs a free AdSwipeFile account; each tool call counts against the account's monthly allowance, and on some plans an ad's copy is shown only after an upgrade on adswipefile.com.",
+        "shortDescription": "Ad examples by brand and niche",
+        "longDescription": "AdSwipeFile is an ad creative research tool for marketers, founders and creative teams. It connects to a curated library of real ads from brands on Meta (Facebook, Instagram), TikTok and other platforms, filed by brand, niche and format, so you can find examples to study before you brief or write your own ads.\n\nAsk for the newest ads in a niche such as beauty, supplements or software, or in a format such as UGC, before and after, testimonial or comparison. List the ads a brand has in the library. Open an ad to read its audiences and, where your account includes it, its copy, then ask the assistant to point out the hooks and angles it uses or to draft hooks for your product in the same style. Review the ads you saved on adswipefile.com.\n\nEvery ad comes with a link to its page on adswipefile.com, where you can see the creative.\n\nWhat it does not do: the library holds no spend, reach or performance data, so it cannot say which ads performed best. It does not cover every brand or every ad and is not a live feed of Meta's or TikTok's ad libraries; it is updated by periodic imports. It cannot run, buy or edit ads, and does not generate images or video. Every tool is read-only. An AdSwipeFile account is required to connect.",
         "developerName": "AdSwipeFile",
-        "category": "Productivity",
+        "category": "Business & Operations",
         "capabilities": [
           "Search ads, brands, niches and formats",
           "Newest ads by brand, niche and format",
-          "An ad's copy, audiences and formats",
-          "Brand teardowns: formats, angles, offers",
-          "Hooks adapted from real ads for your product",
-          "Your saved ads and what they share"
+          "Ad details: audiences, formats and copy",
+          "A brand's ads in the library",
+          "Real ad copy to study for hooks and angles",
+          "Your saved ads from adswipefile.com"
         ],
         "websiteURL": "https://adswipefile.com",
         "supportURL": "https://adswipefile.com/contact",
@@ -51,13 +50,13 @@
           "What does Liquid Death advertise, and which angles does it repeat?",
           "Find testimonial ads for supplements and write 3 hooks for my product."
         ],
-        "brandColor": "#00FF94",
+        "brandColor": "#10A760",
         "composerIcon": "./assets/icon.png",
         "logo": "./assets/logo.png"
       },
       "onboardingSkill": "./skills/get-started/SKILL.md",
       "publication": {
-        "release_notes": "1.0.0: First release. Seven read-only tools to search the library, list ads by brand, niche and format, read an ad in full and list your saved ads, plus skills for finding examples, brand teardowns, hooks adapted from real ads and reviewing saved ads."
+        "release_notes": "1.1.4: Clearer listing. Search ads, brands, niches and formats; list the newest ads by brand, niche and format; read an ad's audiences, formats and copy; list a brand's ads; and review your saved ads. Seven read-only tools, every ad linked to its page."
       }
     }
   }

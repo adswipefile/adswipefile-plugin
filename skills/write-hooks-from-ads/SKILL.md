@@ -1,6 +1,6 @@
 ---
 name: write-hooks-from-ads
-description: Read real ads in AdSwipeFile, name the hook and angle patterns they use, and write original hooks, headlines or ad copy for the user's product in those patterns. Use when the user wants hooks, angles, headlines or ad copy inspired by winning ads.
+description: Read real ads in AdSwipeFile, name the hook and angle patterns they use, and write original hooks, headlines or ad copy for the user's product in those patterns. Use when the user wants hooks, angles, headlines or ad copy inspired by real ads.
 ---
 
 # Write hooks from real ads
@@ -14,8 +14,8 @@ description: Read real ads in AdSwipeFile, name the hook and angle patterns they
    Comparison when they name none.
 3. Read four to six of them with `get_ad` for their copy.
 
-If `get_ad` returns no copy and a line on how to unlock it, pass that line on
-once. Work from the ads' names, descriptions and formats, and say the hooks
+If `get_ad` returns an ad without its copy, with a line saying so, pass that
+line on once. Work from the ads' names, descriptions and formats, and say the hooks
 are drawn from those rather than from the full copy.
 
 ## Write
