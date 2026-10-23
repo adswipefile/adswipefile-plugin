@@ -35,8 +35,7 @@ Explicit user instructions take priority over this guidance.
 
 Say so plainly if asked: it has no spend, reach, CTR or ROAS figures; it
 cannot create, run or buy ads; it does not generate images or video; it is a
-curated collection updated by periodic imports, not a live feed of Meta's or
-TikTok's ad libraries; and it cannot save or remove ads.
+curated collection, not a live feed of Meta's or TikTok's ad libraries; and it cannot save or remove ads.
 
 ## Suggested first questions
 

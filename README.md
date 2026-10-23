@@ -73,8 +73,8 @@ machine is sent. See the [privacy policy](https://adswipefile.com/privacy).
 
 AdSwipeFile is a reference library of ad creative. It holds no spend, reach or
 performance figures, cannot create, run or buy ads, and does not generate
-images or video. It is a curated collection updated by periodic imports, not a
-live feed of Meta's or TikTok's ad libraries.
+images or video. It is a curated collection, not a live feed of Meta's or TikTok's
+ad libraries.
 
 ## Support
 

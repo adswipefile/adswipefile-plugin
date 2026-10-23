@@ -18,6 +18,9 @@ description: Summarize what a brand advertises in AdSwipeFile, the formats, angl
      with a link to an ad that shows it.
    - **Offers**: discounts, bundles, guarantees or free trials that appear.
    - **Audiences**: who the ads address, from the `audiences` field.
+5. If the user follows the brand on AdSwipeFile, `list_followed_ads` adds its
+   newest Meta ads, launched since the library last filed them. Cite each with
+   its `url`.
 
 ## Rules
 
