@@ -1,7 +1,7 @@
 {
   "name": "adswipefile",
-  "version": "1.1.5",
-  "description": "Ad creative research from AdSwipeFile: search a curated library of real ads from Meta, TikTok and other platforms by brand, niche and format, read an ad's audiences and copy, and study its hooks and angles, each linked to the ad's page.",
+  "version": "1.1.6",
+  "description": "Ad creative research from AdSwipeFile: search a curated library of real Meta ads (Facebook and Instagram) by brand, niche and format, read an ad's audiences and copy, and study its hooks and angles, each linked to the ad's page.",
   "author": {
     "name": "AdSwipeFile",
     "email": "hello@adswipefile.com",
@@ -18,7 +18,7 @@
     "ad examples",
     "facebook ads",
     "meta ads",
-    "tiktok ads",
+    "instagram ads",
     "ugc",
     "hooks",
     "copywriting",
@@ -30,7 +30,7 @@
   "interface": {
     "displayName": "AdSwipeFile",
     "shortDescription": "Ad examples by brand and niche",
-    "longDescription": "AdSwipeFile is an ad creative research tool for marketers, founders and creative teams. It connects to a curated library of real ads from brands on Meta (Facebook, Instagram), TikTok and other platforms, filed by brand, niche and format, so you can find examples to study before you brief or write your own ads.\n\nAsk for the newest ads in a niche such as beauty, supplements or software, or in a format such as UGC, before and after, testimonial or comparison. List the ads a brand has in the library. Open an ad to read its audiences and, where your account includes it, its copy, then ask the assistant to point out the hooks and angles it uses or to draft hooks for your product in the same style. Review the ads you saved on adswipefile.com.\n\nEvery ad comes with a link to its page on adswipefile.com, where you can see the creative.\n\nWhat it does not do: the library holds no spend, reach or performance data, so it cannot say which ads performed best. It does not cover every brand or every ad and is not a live feed of Meta's or TikTok's ad libraries. It cannot run, buy or edit ads, and does not generate images or video. Every tool is read-only. An AdSwipeFile account is required to connect.",
+    "longDescription": "AdSwipeFile is an ad creative research tool for marketers, founders and creative teams. It connects to a curated library of real ads from brands on Meta (Facebook, Instagram), filed by brand, niche and format, so you can find examples to study before you brief or write your own ads.\n\nAsk for the newest ads in a niche such as beauty, supplements or software, or in a format such as UGC, before and after, testimonial or comparison. List the ads a brand has in the library. Open an ad to read its audiences and, where your account includes it, its copy, then ask the assistant to point out the hooks and angles it uses or to draft hooks for your product in the same style. Review the ads you saved on adswipefile.com.\n\nEvery ad comes with a link to its page on adswipefile.com, where you can see the creative.\n\nWhat it does not do: the library holds no spend, reach or performance data, so it cannot say which ads performed best. It does not cover every brand or every ad and is not a live feed of Meta's ad library. It cannot run, buy or edit ads, and does not generate images or video. Every tool is read-only. An AdSwipeFile account is required to connect.",
     "developerName": "AdSwipeFile",
     "category": "Business & Operations",
     "capabilities": [

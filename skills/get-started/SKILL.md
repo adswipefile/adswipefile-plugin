@@ -23,8 +23,8 @@ Explicit user instructions take priority over this guidance.
 ## What to say
 
 - AdSwipeFile is a curated library of real ads from brands on Meta (Facebook,
-  Instagram), TikTok and other platforms, filed by brand, niche (industry) and
-  format (UGC, before and after, testimonial, comparison…).
+  Instagram), filed by brand, niche (industry) and format (UGC, before and
+  after, testimonial, comparison…).
 - Each ad has its brand, niche, formats, audiences, an image and a page link.
   When `get_ad` returns an ad without its copy, it adds a line saying so: pass
   that line on.
@@ -35,7 +35,7 @@ Explicit user instructions take priority over this guidance.
 
 Say so plainly if asked: it has no spend, reach, CTR or ROAS figures; it
 cannot create, run or buy ads; it does not generate images or video; it is a
-curated collection, not a live feed of Meta's or TikTok's ad libraries; and it cannot save or remove ads.
+curated collection, not a live feed of Meta's ad library; and it cannot save or remove ads.
 
 ## Suggested first questions
 

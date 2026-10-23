@@ -1,8 +1,8 @@
 # AdSwipeFile plugin
 
 Ad creative research for Claude, ChatGPT and Codex: search a curated library
-of real ads from brands on Meta (Facebook, Instagram), TikTok and other
-platforms, by brand, niche and format.
+of real ads from brands on Meta (Facebook, Instagram) by brand, niche and
+format.
 
 [AdSwipeFile](https://adswipefile.com) files each ad with its brand, niche
 (industry), formats (UGC, before and after, testimonial, comparison…),
@@ -73,8 +73,8 @@ machine is sent. See the [privacy policy](https://adswipefile.com/privacy).
 
 AdSwipeFile is a reference library of ad creative. It holds no spend, reach or
 performance figures, cannot create, run or buy ads, and does not generate
-images or video. It is a curated collection, not a live feed of Meta's or TikTok's
-ad libraries.
+images or video. It is a curated collection, not a live feed of Meta's ad
+library.
 
 ## Support
 
