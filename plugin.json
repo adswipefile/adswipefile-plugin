@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "adswipefile",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "description": "Ad creative research from AdSwipeFile: search a curated library of real Meta ads (Facebook and Instagram) by brand, niche and format, read an ad's audiences and copy, and study its hooks and angles, each linked to the ad's page.",
   "author": {
     "name": "AdSwipeFile",
@@ -9,6 +9,7 @@
     "url": "https://adswipefile.com"
   },
   "homepage": "https://adswipefile.com/docs/mcp",
+  "repository": "https://github.com/adswipefile/adswipefile-plugin",
   "license": "MIT",
   "keywords": [
     "ads",
@@ -30,7 +31,7 @@
       "interface": {
         "displayName": "AdSwipeFile",
         "shortDescription": "Ad examples by brand and niche",
-        "longDescription": "AdSwipeFile is an ad creative research tool for marketers, founders and creative teams. It connects to a curated library of real ads from brands on Meta (Facebook, Instagram), filed by brand, niche and format, so you can find examples to study before you brief or write your own ads.\n\nAsk for the newest ads in a niche such as beauty, supplements or software, or in a format such as UGC, before and after, testimonial or comparison. List the ads a brand has in the library. Open an ad to read its audiences and, where your account includes it, its copy, then ask the assistant to point out the hooks and angles it uses or to draft hooks for your product in the same style. Review the ads you saved on adswipefile.com.\n\nEvery ad comes with a link to its page on adswipefile.com, where you can see the creative.\n\nWhat it does not do: the library holds no spend, reach or performance data, so it cannot say which ads performed best. It does not cover every brand or every ad and is not a live feed of Meta's ad library. It cannot run, buy or edit ads, and does not generate images or video. Every tool is read-only. An AdSwipeFile account is required to connect.",
+        "longDescription": "AdSwipeFile is an ad creative research tool for marketers, founders and creative teams. It connects to a curated library of real ads from brands on Meta (Facebook, Instagram), filed by brand, niche and format, so you can find examples to study before you brief or write your own ads.\n\nAsk for the newest ads in a niche such as beauty, supplements or software, or in a format such as UGC, before and after, testimonial or comparison. List the ads a brand has in the library. Open an ad to read its audiences and, where your account includes it, its copy, then ask the assistant to point out the hooks and angles it uses or to draft hooks for your product in the same style. Review the ads you saved on adswipefile.com, and the newest ads of the brands you follow there.\n\nEvery ad comes with a link to its page on adswipefile.com, where you can see the creative.\n\nWhat it does not do: the library holds no spend, reach or performance data, so it cannot say which ads performed best. It does not cover every brand or every ad and is not a live feed of Meta's ad library. It cannot run, buy or edit ads, and does not generate images or video. Every tool is read-only. An AdSwipeFile account is required to connect.",
         "developerName": "AdSwipeFile",
         "category": "Business & Operations",
         "capabilities": [
@@ -39,7 +40,7 @@
           "Ad details: audiences, formats and copy",
           "A brand's ads in the library",
           "Real ad copy to study for hooks and angles",
-          "Your saved ads from adswipefile.com"
+          "Your saved ads and followed brands' new ads"
         ],
         "websiteURL": "https://adswipefile.com",
         "supportURL": "https://adswipefile.com/contact",
@@ -56,7 +57,7 @@
       },
       "onboardingSkill": "./skills/get-started/SKILL.md",
       "publication": {
-        "release_notes": "1.1.5: Describes the library as a curated collection, with no update schedule. Search ads, brands, niches and formats; list the newest ads by brand, niche and format; read an ad's audiences, formats and copy; list a brand's ads; and review your saved ads. Seven read-only tools, every ad linked to its page."
+        "release_notes": "1.2.0: Covers list_followed_ads: the newest ads of the brands you follow on adswipefile.com. Search ads, brands, niches and formats; list the newest ads by brand, niche and format; read an ad's audiences, formats and copy; list a brand's ads; and review your saved ads. Eight read-only tools, every ad linked to its page."
       }
     }
   }

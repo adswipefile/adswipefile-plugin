@@ -16,6 +16,7 @@ MCP and adds skills that tell it how to research and cite ads well.
 - "What does Liquid Death advertise, and which angles does it repeat?"
 - "Find testimonial ads for supplements and write 3 hooks for my product."
 - "Show me the ads I've saved and what they have in common."
+- "What have the brands I follow launched this week?"
 
 ## What is in here
 
@@ -28,7 +29,7 @@ MCP and adds skills that tell it how to research and cite ads well.
 | `.cursor-plugin/`, `.grok-plugin/` | Cursor and Grok manifests |
 | `.mcp.json` | The remote MCP server, `https://adswipefile.com/api/mcp` |
 | `skills/` | Five skills: get started, find ad examples, brand teardown, write hooks from ads, review saved ads |
-| `assets/` | Icon |
+| assets/ | Icon and logo |
 
 The skills are plain Markdown instructions. The plugin ships no scripts, hooks
 or executables and installs no packages.
@@ -59,15 +60,18 @@ connector. Setup for other clients: https://adswipefile.com/docs/mcp.
 
 Connecting opens a browser sign-in to your AdSwipeFile account (OAuth 2.1).
 An AdSwipeFile account is required; there is no API key to copy. The plugin asks for read
-access to the ad library and to the ads you saved on the site. Every tool is
-read-only: it cannot change your account, your saved ads or your boards.
+access to the ad library and to the ads you saved and the brands you follow on
+the site. Every tool is read-only: it cannot change your account, your saved
+ads, your follows or your boards.
 
 The plugin talks to one server, `adswipefile.com`. When the assistant calls a
 tool, the tool's arguments, such as a search query or a brand, niche or format,
 are sent to that server. AdSwipeFile records each tool call in its product
 analytics (PostHog): the tool name, its arguments, timing, errors, the AI
-client's name and your account identifier. Nothing else from your conversation or your
-machine is sent. See the [privacy policy](https://adswipefile.com/privacy).
+client's name and version, and your account identifier. When you pick one of
+the server's ready-made prompts, it records which one, not what you typed into
+it. It does not record the rest of your conversation or the results it sends
+back, and nothing from your machine is sent. See the [privacy policy](https://adswipefile.com/privacy).
 
 ## Scope
 
