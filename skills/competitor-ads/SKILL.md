@@ -1,9 +1,9 @@
 ---
-name: brand-teardown
-description: Summarize what a brand advertises in AdSwipeFile, the formats, angles, hooks and offers it repeats, with a link to every ad cited. Use for competitor research, "what does this brand run", or brand creative teardowns.
+name: competitor-ads
+description: Show what ads a brand or competitor is running in the AdSwipeFile ad library, and sum up the formats, hooks, angles and offers it repeats, with a link to every ad cited. Use for "what ads is {brand} running", "show me my competitor's Facebook ads", competitor research, spying on a competitor's creatives, or a brand creative teardown.
 ---
 
-# Brand teardown
+# Competitor ads
 
 1. Find the brand with `search_library`. If no brand matches, say the library
    does not have it; do not tear down a similar brand instead.
@@ -27,7 +27,10 @@ description: Summarize what a brand advertises in AdSwipeFile, the formats, angl
 - Base every claim on an ad you listed or read, and link that ad's `url`.
 - Say the teardown covers the brand's ads in this library, not everything the
   brand has run.
-- The library has no spend or performance data. Do not call an ad a winner, a
-  top performer or a scaled ad because it appears more than once.
+- Never state an ad's results: spend, ROAS, conversions, or that one ad beat
+  another. The library holds no such data. "Winning" in this library means an
+  ad the brand kept running and that was filed as worth studying; a long run
+  (`sort: "longest_running"`) or many variants is a reason to study an ad,
+  not proof that it performed.
 - If `get_ad` returns an ad without its copy, with a line saying so, base the
   angles on the ad's name, description and formats, and pass that line on once.

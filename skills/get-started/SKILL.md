@@ -1,6 +1,6 @@
 ---
 name: get-started
-description: Set up AdSwipeFile after installation, check its connection when asked, and help the user try a first question about ad creative. Use for get started, onboarding, setup, connection checks, or questions about what the library holds.
+description: Set up AdSwipeFile after installation, check its connection when asked, and help the user ask a first question about winning ads, competitor ads or hooks. Use for get started, onboarding, setup, "is it connected", "what can this ad library do", or questions about what the library holds.
 ---
 
 # Get started with AdSwipeFile
@@ -22,9 +22,10 @@ Explicit user instructions take priority over this guidance.
 
 ## What to say
 
-- AdSwipeFile is a curated library of real ads from brands on Meta (Facebook,
-  Instagram), filed by brand, niche (industry) and format (UGC, before and
-  after, testimonial, comparison…).
+- AdSwipeFile is an ad library of winning Facebook and Instagram ads: real
+  Meta ads from brands, filed by brand, niche (industry) and format (UGC,
+  before and after, testimonial, comparison…). Ask what a competitor is
+  running, what's working in a niche, or for hooks from real ads.
 - Each ad has its brand, niche, formats, audiences, an image and a page link.
   When `get_ad` returns an ad without its copy, it adds a line saying so: pass
   that line on.
@@ -42,6 +43,6 @@ remove or follow anything.
 
 Offer one, adapted to what the user mentioned:
 
-- "Show me 5 recent UGC ads from beauty brands."
-- "What does Liquid Death advertise, and which angles does it repeat?"
+- "What ads is Liquid Death running? Sum up its hooks and angles."
+- "Show me winning UGC ads from skincare brands, with their hooks."
 - "Find testimonial ads for supplements and write 3 hooks for my product."

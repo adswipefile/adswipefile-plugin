@@ -1,6 +1,6 @@
 ---
 name: review-saved-ads
-description: List the ads the user saved on adswipefile.com and find what they have in common, such as formats, niches, angles and offers. Use when the user asks about their saved ads, favorites, or swipe file.
+description: List the ads the user saved on adswipefile.com and find what they have in common: formats, niches, hooks, angles and offers. Use for "show me the ads I saved", "what do my saved ads have in common", their favorites, boards or swipe file.
 ---
 
 # Review saved ads

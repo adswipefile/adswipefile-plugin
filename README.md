@@ -1,20 +1,22 @@
 # AdSwipeFile plugin
 
-Ad creative research for Claude, ChatGPT and Codex: search a curated library
-of real ads from brands on Meta (Facebook, Instagram) by brand, niche and
-format.
+Winning Facebook and Instagram ads, competitor ads, hooks and angles, in
+Claude, ChatGPT and Codex: the [AdSwipeFile](https://adswipefile.com) ad
+library, searched by your AI agent.
 
-[AdSwipeFile](https://adswipefile.com) files each ad with its brand, niche
-(industry), formats (UGC, before and after, testimonial, comparison…),
-audiences and copy. This plugin connects your AI assistant to the library over
-MCP and adds skills that tell it how to research and cite ads well.
+AdSwipeFile files real Meta ads by brand, niche (industry) and format (UGC,
+before and after, testimonial, comparison…), each with its audiences and
+copy. This plugin connects your AI assistant to the library over MCP and adds
+skills that tell it how to research competitor ads, read hooks and angles,
+and cite every ad it uses.
 
 ## What you can ask
 
-- "Show me 5 recent UGC ads from beauty brands."
+- "What ads is Liquid Death running? Sum up its hooks and angles."
+- "Show me winning UGC ads from skincare brands, with their hooks."
 - "Find ads about protein powder."
-- "What does Liquid Death advertise, and which angles does it repeat?"
 - "Find testimonial ads for supplements and write 3 hooks for my product."
+- "Compare the ads of my competitors and tell me which angles nobody runs."
 - "Show me the ads I've saved and what they have in common."
 - "What have the brands I follow launched this week?"
 
@@ -28,7 +30,7 @@ MCP and adds skills that tell it how to research and cite ads well.
 | `.claude-plugin/marketplace.json` | Marketplace entry, so this repo can be added as a Claude Code marketplace |
 | `.cursor-plugin/`, `.grok-plugin/` | Cursor and Grok manifests |
 | `.mcp.json` | The remote MCP server, `https://adswipefile.com/api/mcp` |
-| `skills/` | Five skills: get started, find ad examples, brand teardown, write hooks from ads, review saved ads |
+| `skills/` | Five skills: get started, find winning ads, competitor ads, write hooks from ads, review saved ads |
 | assets/ | Icon and logo |
 
 The skills are plain Markdown instructions. The plugin ships no scripts, hooks

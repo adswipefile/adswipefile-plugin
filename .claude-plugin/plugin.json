@@ -1,8 +1,8 @@
 {
   "name": "adswipefile",
   "displayName": "AdSwipeFile",
-  "version": "1.2.0",
-  "description": "Ad creative research from AdSwipeFile: search a curated library of real Meta ads (Facebook and Instagram) by brand, niche and format, read an ad's audiences and copy, and study its hooks and angles, each linked to the ad's page.",
+  "version": "1.3.0",
+  "description": "Winning Facebook and Instagram ads, competitor ads, hooks and angles from the AdSwipeFile ad library, in your AI agent over MCP: search real Meta ads by brand, niche and format, see what a brand is running, read an ad's copy and audiences, and write hooks from real ads, each linked to the ad's page.",
   "author": {
     "name": "AdSwipeFile",
     "email": "hello@adswipefile.com",
@@ -12,19 +12,18 @@
   "repository": "https://github.com/adswipefile/adswipefile-plugin",
   "license": "MIT",
   "keywords": [
-    "ads",
-    "ad creative",
-    "swipe file",
     "ad library",
-    "ad examples",
+    "ads library",
+    "winning ads",
+    "competitor ads",
     "facebook ads",
-    "meta ads",
     "instagram ads",
-    "ugc",
+    "meta ads",
+    "creative research",
     "hooks",
-    "copywriting",
-    "marketing",
-    "competitor research"
+    "angles",
+    "ad inspiration",
+    "swipe file"
   ],
   "icon": "./assets/icon.png",
   "documentationUrl": "https://adswipefile.com/docs/mcp",

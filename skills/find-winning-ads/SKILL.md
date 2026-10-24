@@ -1,9 +1,9 @@
 ---
-name: find-ad-examples
-description: Find real ad examples in AdSwipeFile by niche, format, brand or keyword and present them with links. Use when the user wants ad inspiration, examples of a format (UGC, before and after, testimonial, comparison), or ads from an industry.
+name: find-winning-ads
+description: Find winning Facebook and Instagram ads in the AdSwipeFile ad library by niche, format, brand or keyword, and present them with links. Use for "show me winning ads in {niche}", "what's working in {niche} right now", ad inspiration, ad examples, or examples of a format (UGC, before and after, testimonial, comparison).
 ---
 
-# Find ad examples
+# Find winning ads
 
 ## Resolve names to slugs first
 
@@ -23,7 +23,9 @@ Call each list tool at most once per conversation; reuse what it returned.
 ## List and present
 
 - Call `list_ads` with the slugs, and a `limit` close to what the user asked
-  for. Results are the newest additions to the library first.
+  for. Results are the newest additions to the library first. For "what's
+  working" or "what's been running longest", pass `sort: "longest_running"`;
+  a long run is a reason to study an ad, not proof of its results.
 - For each ad give the brand, niche, formats and its page `url`. Show the
   `image` when the host renders images.
 - `created_at` is when the ad was added to the library, not when it ran.

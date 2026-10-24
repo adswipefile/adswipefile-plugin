@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "adswipefile",
-  "version": "1.2.0",
-  "description": "Ad creative research from AdSwipeFile: search a curated library of real Meta ads (Facebook and Instagram) by brand, niche and format, read an ad's audiences and copy, and study its hooks and angles, each linked to the ad's page.",
+  "version": "1.3.0",
+  "description": "Winning Facebook and Instagram ads, competitor ads, hooks and angles from the AdSwipeFile ad library, in your AI agent over MCP: search real Meta ads by brand, niche and format, see what a brand is running, read an ad's copy and audiences, and write hooks from real ads, each linked to the ad's page.",
   "author": {
     "name": "AdSwipeFile",
     "email": "hello@adswipefile.com",
@@ -12,43 +12,42 @@
   "repository": "https://github.com/adswipefile/adswipefile-plugin",
   "license": "MIT",
   "keywords": [
-    "ads",
-    "ad creative",
-    "swipe file",
     "ad library",
-    "ad examples",
+    "ads library",
+    "winning ads",
+    "competitor ads",
     "facebook ads",
-    "meta ads",
     "instagram ads",
-    "ugc",
+    "meta ads",
+    "creative research",
     "hooks",
-    "copywriting",
-    "marketing",
-    "competitor research"
+    "angles",
+    "ad inspiration",
+    "swipe file"
   ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "AdSwipeFile",
-        "shortDescription": "Ad examples by brand and niche",
-        "longDescription": "AdSwipeFile is an ad creative research tool for marketers, founders and creative teams. It connects to a curated library of real ads from brands on Meta (Facebook, Instagram), filed by brand, niche and format, so you can find examples to study before you brief or write your own ads.\n\nAsk for the newest ads in a niche such as beauty, supplements or software, or in a format such as UGC, before and after, testimonial or comparison. List the ads a brand has in the library. Open an ad to read its audiences and, where your account includes it, its copy, then ask the assistant to point out the hooks and angles it uses or to draft hooks for your product in the same style. Review the ads you saved on adswipefile.com, and the newest ads of the brands you follow there.\n\nEvery ad comes with a link to its page on adswipefile.com, where you can see the creative.\n\nWhat it does not do: the library holds no spend, reach or performance data, so it cannot say which ads performed best. It does not cover every brand or every ad and is not a live feed of Meta's ad library. It cannot run, buy or edit ads, and does not generate images or video. Every tool is read-only. An AdSwipeFile account is required to connect.",
+        "shortDescription": "Ad library of winning Meta ads",
+        "longDescription": "AdSwipeFile is an ad library of winning Facebook and Instagram ads for people who make Meta ads: media buyers, creative strategists, freelancers, agencies and DTC brands. Real ads from real brands, filed by brand, niche and format, that your AI assistant searches for you instead of you scrolling the Meta Ad Library.\n\nAsk what ads a competitor is running and get the formats, hooks, angles and offers it repeats. Ask for winning ads in a niche such as skincare, supplements or software, or in a format such as UGC, before and after, testimonial or comparison. Open an ad to read its audiences and, where your account includes it, its copy, then have the assistant name its hook and angle and write hooks for your product in the same pattern. Ads tracked on Meta show when they started and how long they have run. Check the ads you saved on adswipefile.com, and the newest ads of the brands you follow there.\n\nEvery ad links to its page on adswipefile.com, where you can see the creative.\n\nWhat it does not do: \"winning\" means ads brands kept running and that the library filed as worth studying. The library holds no spend, reach or performance data, so it never says how an ad performed or that one ad beat another. It does not cover every brand or every ad and is not a live feed of the Meta Ad Library. It cannot run, buy or edit ads, and does not generate images or video. Every tool is read-only. An AdSwipeFile account is required to connect.",
         "developerName": "AdSwipeFile",
         "category": "Business & Operations",
         "capabilities": [
-          "Search ads, brands, niches and formats",
-          "Newest ads by brand, niche and format",
-          "Ad details: audiences, formats and copy",
-          "A brand's ads in the library",
-          "Real ad copy to study for hooks and angles",
-          "Your saved ads and followed brands' new ads"
+          "Winning ads by brand, niche and format",
+          "What ads a competitor is running",
+          "An ad's copy, audiences and run dates",
+          "Hooks and angles read from real ads",
+          "New ads from the brands you follow",
+          "Your saved ads, in your assistant"
         ],
         "websiteURL": "https://adswipefile.com",
         "supportURL": "https://adswipefile.com/contact",
         "privacyPolicyURL": "https://adswipefile.com/privacy",
         "termsOfServiceURL": "https://adswipefile.com/terms",
         "defaultPrompt": [
-          "Show me 5 recent UGC ads from beauty brands, with links.",
-          "What does Liquid Death advertise, and which angles does it repeat?",
+          "What ads is Liquid Death running? Sum up its hooks and angles.",
+          "Show me winning UGC ads from skincare brands, with their hooks.",
           "Find testimonial ads for supplements and write 3 hooks for my product."
         ],
         "brandColor": "#10A760",
@@ -57,7 +56,7 @@
       },
       "onboardingSkill": "./skills/get-started/SKILL.md",
       "publication": {
-        "release_notes": "1.2.0: Covers list_followed_ads: the newest ads of the brands you follow on adswipefile.com. Search ads, brands, niches and formats; list the newest ads by brand, niche and format; read an ad's audiences, formats and copy; list a brand's ads; and review your saved ads. Eight read-only tools, every ad linked to its page."
+        "release_notes": "1.3.0: Listing, skills and example prompts rewritten in the words ad buyers use: winning ads, competitor ads, hooks and angles. Two skills are renamed: find-ad-examples is now find-winning-ads and brand-teardown is now competitor-ads, so commands that named the old skills need the new names. Search winning Facebook and Instagram ads by brand, niche and format; see what ads a brand is running; read an ad's copy, audiences and run dates; review your saved ads and the new ads of brands you follow. Eight read-only tools, every ad linked to its page."
       }
     }
   }
