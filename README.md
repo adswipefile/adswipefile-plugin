@@ -69,11 +69,16 @@ ads, your follows or your boards.
 The plugin talks to one server, `adswipefile.com`. When the assistant calls a
 tool, the tool's arguments, such as a search query or a brand, niche or format,
 are sent to that server. AdSwipeFile records each tool call in its product
-analytics (PostHog): the tool name, its arguments, timing, errors, the AI
-client's name and version, and your account identifier. When you pick one of
-the server's ready-made prompts, it records which one, not what you typed into
-it. It does not record the rest of your conversation or the results it sends
-back, and nothing from your machine is sent. See the [privacy policy](https://adswipefile.com/privacy).
+analytics (PostHog): the tool name, its arguments (an argument containing an
+email address or a phone or card number is replaced first), timing, how the call
+turned out (how many results, or that nothing matched, the call was refused or
+it failed), errors, the AI client's name and version, and your account
+identifier. Calls made close together are grouped into a session (for ChatGPT,
+by the anonymous conversation id it sends). When you pick one of the server's
+ready-made prompts, it records which one, not what you typed into it. It does
+not record the rest of your conversation or the results it sends back, only how
+many, and nothing from your machine is sent. See the [privacy
+policy](https://adswipefile.com/privacy).
 
 ## Scope
 
