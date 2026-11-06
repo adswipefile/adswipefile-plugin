@@ -11,7 +11,7 @@
       "name": "adswipefile",
       "source": "./",
       "description": "Winning Facebook and Instagram ads, competitor ads, hooks and angles from the AdSwipeFile ad library, in your AI agent over MCP: search real Meta ads by brand, niche and format, see what a brand is running, read an ad's copy and audiences, and write hooks from real ads, each linked to the ad's page.",
-      "version": "1.3.0"
+      "version": "1.3.1"
     }
   ]
 }
