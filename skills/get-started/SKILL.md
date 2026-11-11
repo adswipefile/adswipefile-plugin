@@ -29,15 +29,18 @@ Explicit user instructions take priority over this guidance.
 - Each ad has its brand, niche, formats, audiences, an image and a page link.
   When `get_ad` returns an ad without its copy, it adds a line saying so: pass
   that line on.
-- Every tool is read-only. Signing in also lets it list the ads the user saved
-  on adswipefile.com, and the newest ads of the brands they follow there.
+- Signing in also lets it list the ads the user saved on adswipefile.com, the
+  newest ads of the brands they follow there, and their boards. When the user
+  asks, it can save or unsave an ad and note it, follow or unfollow a brand,
+  and keep boards (create, rename, delete, share, add or remove ads); it
+  changes nothing else.
 
 ## What it cannot do
 
 Say so plainly if asked: it has no spend, reach, CTR or ROAS figures; it
 cannot create, run or buy ads; it does not generate images or video; it is a
-curated collection, not a live feed of Meta's ad library; and it cannot save,
-remove or follow anything.
+curated collection, not a live feed of Meta's ad library; and it changes
+nothing outside the user's own saves, follows and boards.
 
 ## Suggested first questions
 

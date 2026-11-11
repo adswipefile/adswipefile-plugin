@@ -63,8 +63,12 @@ connector. Setup for other clients: https://adswipefile.com/docs/mcp.
 Connecting opens a browser sign-in to your AdSwipeFile account (OAuth 2.1).
 An AdSwipeFile account is required; there is no API key to copy. The plugin asks for read
 access to the ad library and to the ads you saved and the brands you follow on
-the site. Every tool is read-only: it cannot change your account, your saved
-ads, your follows or your boards.
+the site (`mcp:read`), and for permission to change your follows and boards
+(`mcp:write`). Most tools read. The write tools follow or unfollow a library
+brand, create or delete a board, turn a board's share link on or off, and put
+an ad on a board or take it off, only when you ask; they change nothing outside
+your account. A connection approved before the write tools reads only:
+reconnect and approve again to use them.
 
 The plugin talks to one server, `adswipefile.com`. When the assistant calls a
 tool, the tool's arguments, such as a search query or a brand, niche or format,
