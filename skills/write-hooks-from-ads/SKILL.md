@@ -12,9 +12,13 @@ description: Read winning ads in the AdSwipeFile ad library, name the hook and a
 2. Find relevant ads (see find-winning-ads): the product's niche, and the
    format the user wants, or Testimonial, Pain Point, Before & After and
    Comparison when they name none.
-3. Read four to six of them with `get_ad` for their copy.
+3. Read four to six of them with `get_ads` for their copy.
+4. When the user wants the ad in a given visual format, call `get_format`
+   with its slug once: build from its `how_to_build`, and check each concept
+   against its `how_to_tell` (`must_be`, `quick_test`) so it is that format
+   and not one it is `confused_with`.
 
-If `get_ad` returns an ad without its copy, with a line saying so, pass that
+If `get_ads` returns an ad without its copy, with a line saying so, pass that
 line on once. Work from the ads' names, descriptions and formats, and say the hooks
 are drawn from those rather than from the full copy.
 

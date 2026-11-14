@@ -14,7 +14,11 @@ description: Find winning Facebook and Instagram ads in the AdSwipeFile ad libra
 - An industry ("skincare", "SaaS"): match it against `list_niches`. Niches are
   broad (skincare sits under Beauty / Personal Care), so pick the closest and
   say which one you used.
-- A format ("UGC", "before/after", "reviews"): match it against `list_formats`.
+- A format ("UGC", "before/after", "reviews"): match it against
+  `list_visual_formats` and filter `list_ads` by `visual_format`. When the
+  user asks what makes an ad that format, or which format an ad is, call
+  `get_format` with the slug: it says what must hold, the near misses and the
+  formats it is mixed up with.
 - A brand: call `search_library` with its name. If no brand matches, say the
   library does not have it rather than substituting another brand.
 
