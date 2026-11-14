@@ -26,9 +26,11 @@ Explicit user instructions take priority over this guidance.
   Meta ads from brands, filed by brand, niche (industry) and format (UGC,
   before and after, testimonial, comparison…). Ask what a competitor is
   running, what's working in a niche, or for hooks from real ads.
-- Each ad has its brand, niche, formats, audiences, an image and a page link.
-  When `get_ad` returns an ad without its copy, it adds a line saying so: pass
-  that line on.
+- Each ad has its brand, niche, formats, audiences, its copy, an image and a
+  page link. When a list or search comes back cut short (its first few
+  results, with a total), or `get_ad` returns a breakdown without its layers,
+  the answer carries a `note` saying so: work from what came, and pass the
+  note and its link on once.
 - Signing in also lets it list the ads the user saved on adswipefile.com, the
   newest ads of the brands they follow there, and their boards. When the user
   asks, it can save or unsave an ad and note it, follow or unfollow a brand,
