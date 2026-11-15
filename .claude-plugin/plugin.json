@@ -1,10 +1,10 @@
 {
   "name": "adswipefile",
-  "displayName": "AdSwipeFile",
-  "version": "1.5.1",
+  "displayName": "Ad Swipe File",
+  "version": "1.5.2",
   "description": "Winning Facebook and Instagram ads, competitor ads, hooks and angles from the AdSwipeFile ad library, in your AI agent over MCP: search real Meta ads by brand, niche and format, see what a brand is running, read an ad's copy and audiences, and write hooks from real ads, each linked to the ad's page.",
   "author": {
-    "name": "AdSwipeFile",
+    "name": "Ad Swipe File",
     "email": "hello@adswipefile.com",
     "url": "https://adswipefile.com"
   },

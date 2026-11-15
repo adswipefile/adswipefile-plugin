@@ -2,7 +2,7 @@
   "name": "adswipefile",
   "description": "Winning Facebook and Instagram ads, competitor ads, hooks and angles for Claude Code: the AdSwipeFile ad library over MCP.",
   "owner": {
-    "name": "AdSwipeFile",
+    "name": "Ad Swipe File",
     "email": "hello@adswipefile.com",
     "url": "https://adswipefile.com"
   },
@@ -11,7 +11,7 @@
       "name": "adswipefile",
       "source": "./",
       "description": "Winning Facebook and Instagram ads, competitor ads, hooks and angles from the AdSwipeFile ad library, in your AI agent over MCP: search real Meta ads by brand, niche and format, see what a brand is running, read an ad's copy and audiences, and write hooks from real ads, each linked to the ad's page.",
-      "version": "1.5.1"
+      "version": "1.5.2"
     }
   ]
 }
