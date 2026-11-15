@@ -5,6 +5,15 @@ description: Coach a daily direct-response rep: take one ad from the AdSwipeFile
 
 # Teach an ad breakdown
 
+> **Needs the AdSwipeFile connector.** This skill reads the AdSwipeFile ad library of Meta ads
+> through its MCP server. If no AdSwipeFile tools (`search_library`, `list_ads`) are available, say
+> so before anything else and give the step for this host. Claude Code:
+> `claude mcp add --transport http adswipefile https://adswipefile.com/api/mcp`. claude.ai or
+> ChatGPT: add `https://adswipefile.com/api/mcp` as a custom connector. Other clients:
+> https://adswipefile.com/docs/mcp?utm_source=agent-skill&utm_medium=referral&utm_campaign=teach-ad-breakdown.
+> Connecting opens a sign-in to an AdSwipeFile account. Steps that need only the user's own material
+> can go on; never invent ads, brands or links in place of the library.
+
 One ad a day, studied closely, trains the eye. This skill teaches the ad; it doesn't grade or rewrite
 it (that is `audit-ad-creative`). The learner should leave able to spot the same move in the next ad
 alone. Words are used as the `creative-strategy` skill's glossary defines them.
@@ -19,7 +28,8 @@ alone. Words are used as the `creative-strategy` skill's glossary defines them.
 - **The format**, theirs or the ad's visual format tag. `get_format` gives its how-to-tell and
   how-to-build page; use it as the baseline when it exists.
 - **No ad chosen**: pick one: `list_ads` with `sort: "longest_running"` in their niche, or the newest
-  from `list_followed_ads`. A long run made it worth studying; say that, never that it worked.
+  from `list_followed_ads`, or `list_ads` with the `mechanic` or `hook` they are training on. A long
+  run made it worth studying; say that, never that it worked.
 
 ## The rep
 
@@ -50,8 +60,7 @@ what it risks. When it follows the pattern, say so and name what it does especia
 Plain words, short sentences; a technical term gets one sentence of explanation the first time.
 Quote the ad's real words and point to timestamps or parts of the image for every point. When you're
 guessing why the brand chose something, say it's your read. Talk to the learner directly and name
-the brand or viewer when you mean them. Commas, colons and full stops, no dashes (the house rules in
-`edit-copy-for-voice`). Link the ad by its `url`. Never state the ad's results.
+the brand or viewer when you mean them. Commas, colons and full stops, no dashes. Link the ad by its `url`. Never state the ad's results.
 
 ## Keep the rep
 

@@ -5,6 +5,15 @@ description: Choose, name or rebuild the creative mechanic of an ad (the move th
 
 # Pick a creative mechanic
 
+> **Needs the AdSwipeFile connector.** This skill reads the AdSwipeFile ad library of Meta ads
+> through its MCP server. If no AdSwipeFile tools (`search_library`, `list_ads`) are available, say
+> so before anything else and give the step for this host. Claude Code:
+> `claude mcp add --transport http adswipefile https://adswipefile.com/api/mcp`. claude.ai or
+> ChatGPT: add `https://adswipefile.com/api/mcp` as a custom connector. Other clients:
+> https://adswipefile.com/docs/mcp?utm_source=agent-skill&utm_medium=referral&utm_campaign=pick-creative-mechanic.
+> Connecting opens a sign-in to an AdSwipeFile account. Steps that need only the user's own material
+> can go on; never invent ads, brands or links in place of the library.
+
 The angle is what the ad argues; the format is how it is produced; the **mechanic** is the move that
 gets the viewer to the angle's truth. A mechanic travels across formats: the same move works as a
 talking head, a static or a carousel. A concept with a format and no mechanic is a production spec;
@@ -44,8 +53,10 @@ nearest name.
 3. Ask what the user already knows about their own ads: which moves they have run, and what their
    results showed. A move their results back outranks a fresh one; one that fell flat needs a
    reason to try again. Their results come from them (pasted, a report, another connector).
-4. Find two or three built examples on AdSwipeFile: `search_library` with the move's plain words
-   ("text message", "before after", "comment reply"), then `get_ads` (up to 25 per call) and read
+4. Find two or three built examples on AdSwipeFile: `list_ads` with `mechanic` set to the slug,
+   the concept's `awareness` stage and `niche`, and `sort: "longest_running"`. Too few: drop
+   `niche`, then `awareness`; for a move outside the list, `search_library` with its plain words
+   ("text message", "before after", "comment reply"). Then `get_ads` (up to 25 per call) and read
    each `breakdown`. They show the construction, never a result.
 5. Pair at most two: one primary that shapes the concept, one secondary that adds a layer
    (`social-witness` under `implied-answer`; `reframe` inside `trojan-horse`).
@@ -65,5 +76,11 @@ and `why_it_works`. An incomplete mechanic is a finding for `audit-ad-creative`.
 - Never state an ad's results: spend, ROAS, conversions, or that one ad beat another. A long run is
   a reason to study an ad: write "kept running for 94 days".
 - Link every cited ad by its `url`.
-- The library tags no mechanic: a mechanic you name for a library ad is your reading of its
+- The library tags mechanics with these slugs, so `list_ads` with `mechanic` finds them, but an
+  ad's result doesn't show its tag: a mechanic you name for one library ad is your reading of its
   `breakdown`, so say so.
+
+## Keep the examples
+
+Offer, once, to put the examples on the concept's board (`create_board` or one from `list_boards`,
+then `add_ad_to_board`) with a `set_ad_note` naming the mechanic each shows. Only on a yes.

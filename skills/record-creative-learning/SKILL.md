@@ -5,6 +5,15 @@ description: Close the creative loop: turn your own ad results (an ads manager e
 
 # Record a creative learning
 
+> **Needs the AdSwipeFile connector.** This skill reads the AdSwipeFile ad library of Meta ads
+> through its MCP server. If no AdSwipeFile tools (`search_library`, `list_ads`) are available, say
+> so before anything else and give the step for this host. Claude Code:
+> `claude mcp add --transport http adswipefile https://adswipefile.com/api/mcp`. claude.ai or
+> ChatGPT: add `https://adswipefile.com/api/mcp` as a custom connector. Other clients:
+> https://adswipefile.com/docs/mcp?utm_source=agent-skill&utm_medium=referral&utm_campaign=record-creative-learning.
+> Connecting opens a sign-in to an AdSwipeFile account. Steps that need only the user's own material
+> can go on; never invent ads, brands or links in place of the library.
+
 Research feeds concepts, concepts become tests, and what tests show feeds the next research. If
 nothing in the personas, angles or briefs ever changes, nobody is looking. Words such as persona,
 angle, anchor and mechanic are used as the `creative-strategy` skill's glossary defines them.
@@ -48,7 +57,7 @@ Each learning lands somewhere a later concept will read it:
 - A trigger moment that keeps showing up: add it to that persona's moments.
 - A format or mechanic that keeps falling short at one stage: say so in the implication, so the next
   concepts skip it there.
-- A hook line customers repeat back: keep it as a hook on its angle (`edit-copy-for-voice`).
+- A hook line customers repeat back: keep it as a hook on its angle (`write-hooks-from-ads`).
 - A refuted learning stays, marked refuted, so the next test that asks the same question sees it.
 
 ## 4. Make it actionable on AdSwipeFile

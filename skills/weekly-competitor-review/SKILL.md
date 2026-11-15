@@ -5,6 +5,15 @@ description: Write a short weekly review of the new Meta ads the user's followed
 
 # Weekly competitor review
 
+> **Needs the AdSwipeFile connector.** This skill reads the AdSwipeFile ad library of Meta ads
+> through its MCP server. If no AdSwipeFile tools (`search_library`, `list_ads`) are available, say
+> so before anything else and give the step for this host. Claude Code:
+> `claude mcp add --transport http adswipefile https://adswipefile.com/api/mcp`. claude.ai or
+> ChatGPT: add `https://adswipefile.com/api/mcp` as a custom connector. Other clients:
+> https://adswipefile.com/docs/mcp?utm_source=agent-skill&utm_medium=referral&utm_campaign=weekly-competitor-review.
+> Connecting opens a sign-in to an AdSwipeFile account. Steps that need only the user's own material
+> can go on; never invent ads, brands or links in place of the library.
+
 A short read of what followed brands launched in the window, set against what each brand usually
 runs. Words and evidence rules: the creative-strategy skill's `REFERENCE.md`.
 
@@ -12,6 +21,9 @@ The window is the last 7 days, or since the date the user gives.
 
 ## Steps
 
+0. For an agency, one review per client: `list_workspaces`, then pass the client's `workspace` to
+   `list_followed_ads` and `list_followed_brands`. `get_usage` says how many calls are left; when
+   few are, write the review from step 2 alone and say so.
 1. `list_followed_ads`. Its `following` lists every follow, library brands and Facebook pages
    alike. If it is empty, the account follows nothing: explain that brands are followed on
    adswipefile.com/app/track (by name or Facebook page link), or offer `follow_brand` for brands the

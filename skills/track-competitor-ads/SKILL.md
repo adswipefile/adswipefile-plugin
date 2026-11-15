@@ -5,6 +5,15 @@ description: Follow a brand's competitors on AdSwipeFile so their new Meta ads s
 
 # Track competitor ads
 
+> **Needs the AdSwipeFile connector.** This skill reads the AdSwipeFile ad library of Meta ads
+> through its MCP server. If no AdSwipeFile tools (`search_library`, `list_ads`) are available, say
+> so before anything else and give the step for this host. Claude Code:
+> `claude mcp add --transport http adswipefile https://adswipefile.com/api/mcp`. claude.ai or
+> ChatGPT: add `https://adswipefile.com/api/mcp` as a custom connector. Other clients:
+> https://adswipefile.com/docs/mcp?utm_source=agent-skill&utm_medium=referral&utm_campaign=track-competitor-ads.
+> Connecting opens a sign-in to an AdSwipeFile account. Steps that need only the user's own material
+> can go on; never invent ads, brands or links in place of the library.
+
 Following puts a competitor's new ads in front of the user; the library reads and tags them
 (breakdowns, brand patterns) for study. Neither says how a competitor's ad performed: a long run is a
 reason to study it. Words and evidence rules: the creative-strategy skill's `REFERENCE.md`.
@@ -15,18 +24,21 @@ Input: the direct and admired brands from `map-competitors`, or the brands the u
 
 1. `search_library` with each plain name. Check the hit is the brand, not a namesake.
 2. In the library: with the user's go-ahead, `follow_brand` its slug, so its new ads show in
-   `list_followed_ads`. `list_followed_brands` shows who is already followed. If the answer says
+   `list_followed_ads`. For an agency, follow in the client's `workspace` (`list_workspaces` once),
+   so each client keeps its own competitors. `list_followed_brands` shows who is already followed. If the answer says
    nothing was followed, relay it once and do not retry.
 3. Not in the library: the user can find and follow it by name or Facebook page link on
-   adswipefile.com/app/track, or ask AdSwipeFile to add it to the library at
-   hello@adswipefile.com. Say which brands need this; do not tear down a similar brand instead.
+   adswipefile.com/app/track, and, with their go-ahead, you can ask for it to be added to the
+   library with `submit_feedback` (one call naming every missing brand and its Facebook page). Say which brands need this; do not tear down a similar brand instead.
 
 ## 2. First read
 
-For each followed library brand:
+For each followed library brand. With more than three, `get_usage` first says how many calls
+are left; read the brands that matter most first.
 
 1. `list_ads` with `brand` (the first page carries `brand_patterns`): the most common structure, top
-   visual format and hook tactic, and the share of read ads with each trait.
+   visual format and hook tactic, and the share of read ads with each trait. When it carries a
+   `note` instead, pass it on once with its link and work from the ads.
 2. `list_ads` with `brand` and `sort: "longest_running"`, `limit` 10.
 3. `get_ads` on three to six of those, spread across formats: hook tactic, visual format, mechanic
    (read from `structure` and `breakdown`), offer.

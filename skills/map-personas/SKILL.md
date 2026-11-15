@@ -5,6 +5,15 @@ description: Find every persona in a product's customer reviews (who they are, t
 
 # Map personas
 
+> **Needs the AdSwipeFile connector.** This skill reads the AdSwipeFile ad library of Meta ads
+> through its MCP server. If no AdSwipeFile tools (`search_library`, `list_ads`) are available, say
+> so before anything else and give the step for this host. Claude Code:
+> `claude mcp add --transport http adswipefile https://adswipefile.com/api/mcp`. claude.ai or
+> ChatGPT: add `https://adswipefile.com/api/mcp` as a custom connector. Other clients:
+> https://adswipefile.com/docs/mcp?utm_source=agent-skill&utm_medium=referral&utm_campaign=map-personas.
+> Connecting opens a sign-in to an AdSwipeFile account. Steps that need only the user's own material
+> can go on; never invent ads, brands or links in place of the library.
+
 Find the people an ad can be made for, from what happy customers wrote about themselves. Words
 (persona, trigger moment, awareness stage) are used as the `creative-strategy` skill's glossary
 defines them.
@@ -82,7 +91,9 @@ worked.
 The report goes in the reply (or a file, if the client can write files): header with brand,
 product, source (own brand or "competitor: name"), counts and date; the personas; the trigger
 moments; the reference ads. Then offer to keep the references on AdSwipeFile, one board per persona:
-`create_board`, `add_ad_to_board`, and `set_ad_note` naming the moment each ad shows. Only on a yes.
+`create_board`, `add_ad_to_board`, and `set_ad_note` naming the moment each ad shows, in the
+client's `workspace` when the user works for several. Only on a yes. Then offer `share_board`, so
+the personas' references reach the client or team as one link.
 
 Done when every analyzed record is assigned or counted as unassigned, every persona and trigger
 moment cites record ids, and each persona has its reference ads linked. Concepts from here:

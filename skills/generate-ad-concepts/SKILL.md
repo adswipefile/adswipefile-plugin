@@ -5,6 +5,15 @@ description: Generate ad concepts by walking the map from anchor, persona, aware
 
 # Generate ad concepts
 
+> **Needs the AdSwipeFile connector.** This skill reads the AdSwipeFile ad library of Meta ads
+> through its MCP server. If no AdSwipeFile tools (`search_library`, `list_ads`) are available, say
+> so before anything else and give the step for this host. Claude Code:
+> `claude mcp add --transport http adswipefile https://adswipefile.com/api/mcp`. claude.ai or
+> ChatGPT: add `https://adswipefile.com/api/mcp` as a custom connector. Other clients:
+> https://adswipefile.com/docs/mcp?utm_source=agent-skill&utm_medium=referral&utm_campaign=generate-ad-concepts.
+> Connecting opens a sign-in to an AdSwipeFile account. Steps that need only the user's own material
+> can go on; never invent ads, brands or links in place of the library.
+
 One pass through the map makes one concept; many passes cover a funnel. A concept is not finished
 until it has a value at every step, and every value comes from the user's research and results or
 from ads in the library, never from this file. Words (anchor, persona, trigger moment, angle,
@@ -50,9 +59,12 @@ solution aware, problem aware, unaware, where new customers come from.
 
 ## References from AdSwipeFile
 
-For a step you can't fill, study how other brands built it. Keep calls few.
+For a step you can't fill, study how other brands built it. Keep calls few; before a batch,
+`get_usage` says how many are left.
 
-- `list_ads` with `visual_format`, `hook` or a `niche`, and `sort: "longest_running"`.
+- `list_ads` with the concept's `awareness` stage and the step you need: `mechanic` (the slugs in
+  `pick-creative-mechanic`), `visual_format` or `hook`, plus a `niche`, and
+  `sort: "longest_running"`. Two tag filters at most; drop one when nothing matches.
 - `search_library` with 1 to 3 plain words for a moment or a move ("text message", "before after").
 - A competitor: `list_ads` with its `brand` for `brand_patterns`.
 - Read a sample with `get_ads` (up to 25 per call) for `breakdown` and `why_it_works`.
@@ -80,13 +92,15 @@ In the reply (or a file, if the client can write files), one brief per concept:
 - **Reference ads**, by `url`, each with the step it shows.
 
 Then offer to file the references on AdSwipeFile: `create_board` (or an existing one from
-`list_boards`), `add_ad_to_board`, and `set_ad_note` saying which step each ad shows. Only on a yes.
+`list_boards`), `add_ad_to_board`, and `set_ad_note` saying which step each ad shows, in the
+client's `workspace` when the user works for several (`list_workspaces`). Only on a yes. Once it is
+filed, offer `share_board` so the user can send the references to a client or team as one link.
 
 Batches: one brief per concept, then the coverage the batch leaves open (personas with no upper
 funnel concept, stages with one trigger moment, angles never briefed). Call the set a roadmap.
 
 Done when every concept has all nine steps, each brief is in the reply, and the gaps are named.
-Scripts for a video concept: `write-short-form-script`.
+Before a concept ships: `audit-ad-creative`.
 
 ## Rules
 

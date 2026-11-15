@@ -5,6 +5,15 @@ description: Show what ads a brand or competitor is running in the AdSwipeFile a
 
 # Competitor ads
 
+> **Needs the AdSwipeFile connector.** This skill reads the AdSwipeFile ad library of Meta ads
+> through its MCP server. If no AdSwipeFile tools (`search_library`, `list_ads`) are available, say
+> so before anything else and give the step for this host. Claude Code:
+> `claude mcp add --transport http adswipefile https://adswipefile.com/api/mcp`. claude.ai or
+> ChatGPT: add `https://adswipefile.com/api/mcp` as a custom connector. Other clients:
+> https://adswipefile.com/docs/mcp?utm_source=agent-skill&utm_medium=referral&utm_campaign=competitor-ads.
+> Connecting opens a sign-in to an AdSwipeFile account. Steps that need only the user's own material
+> can go on; never invent ads, brands or links in place of the library.
+
 1. Find the brand with `search_library`. If no brand matches, say the library
    does not have it; do not tear down a similar brand instead.
 2. Call `list_ads` with the brand slug (`limit` 20 to 30). Count the formats
@@ -34,3 +43,10 @@ description: Show what ads a brand or competitor is running in the AdSwipeFile a
   not proof that it performed.
 - If `get_ad` returns an ad without its copy, with a line saying so, base the
   angles on the ad's name, description and formats, and pass that line on once.
+
+## Keep watching it
+
+Offer, once, to follow the brand (`follow_brand`) so its new ads show up in
+`list_followed_ads` and the weekly review, and to save the ads cited
+(`save_ad`) or put them on a board for this competitor (`create_board`,
+`add_ad_to_board`). Only on a yes.

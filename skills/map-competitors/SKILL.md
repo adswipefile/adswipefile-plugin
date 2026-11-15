@@ -5,6 +5,15 @@ description: List a brand's direct competitors, indirect competitors and the bra
 
 # Map competitors
 
+> **Needs the AdSwipeFile connector.** This skill reads the AdSwipeFile ad library of Meta ads
+> through its MCP server. If no AdSwipeFile tools (`search_library`, `list_ads`) are available, say
+> so before anything else and give the step for this host. Claude Code:
+> `claude mcp add --transport http adswipefile https://adswipefile.com/api/mcp`. claude.ai or
+> ChatGPT: add `https://adswipefile.com/api/mcp` as a custom connector. Other clients:
+> https://adswipefile.com/docs/mcp?utm_source=agent-skill&utm_medium=referral&utm_campaign=map-competitors.
+> Connecting opens a sign-in to an AdSwipeFile account. Steps that need only the user's own material
+> can go on; never invent ads, brands or links in place of the library.
+
 A competitor list decides whose reviews the user reads and whose ads they study, so each entry says
 why it is on the list and carries what the next skills need. Words and evidence rules: the
 creative-strategy skill's `REFERENCE.md`.
@@ -36,7 +45,9 @@ when the market is thin.
 For each kept brand, note what later steps need:
 
 - **AdSwipeFile**: whether the library has it (`search_library` with the plain name; a brand hit
-  returns its slug). Check the hit is the brand, not a namesake.
+  returns its slug). Check the hit is the brand, not a namesake. For the brands it lacks, offer
+  to report them with `submit_feedback` (one call naming each brand and its Facebook page) so the
+  library can add them; only on a yes.
 - **Facebook page**: its name and link, so a brand the library lacks can still be followed by name
   or page link on adswipefile.com/app/track.
 - **Review pages**: App Store or Google Play listing, Trustpilot, Amazon or the reviews section of

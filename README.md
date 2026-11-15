@@ -33,7 +33,7 @@ and cite every ad it uses.
 | `.claude-plugin/marketplace.json` | Marketplace entry, so this repo can be added as a Claude Code marketplace |
 | `.cursor-plugin/`, `.grok-plugin/` | Cursor and Grok manifests |
 | `.mcp.json` | The remote MCP server, `https://adswipefile.com/api/mcp` |
-| `skills/` | Seventeen skills. Using the library: get started, find winning ads, competitor ads, write hooks from ads, review saved ads. Creative strategy, with the library as evidence: creative strategy (start here), map competitors, track competitor ads, weekly competitor review, map personas, generate ad concepts, pick a creative mechanic, write a short-form script, edit copy for voice, audit an ad creative, teach an ad breakdown, record a creative learning |
+| `skills/` | Fifteen skills. Using the library: get started, find winning ads, competitor ads, write hooks from ads, review saved ads. Creative strategy, with the library as evidence: creative strategy (start here), map competitors, track competitor ads, weekly competitor review, map personas, generate ad concepts, pick a creative mechanic, audit an ad creative, teach an ad breakdown, record a creative learning |
 | assets/ | Icon and logo |
 
 The skills are plain Markdown instructions. The plugin ships no scripts, hooks

@@ -57,8 +57,9 @@ now, it is a tagline. Not the commercial offer (discount, bundle, guarantee).
 
 **Mechanic**: how the ad makes the viewer arrive at the point: the move between hook, visual and
 story. Not the hook (the opening) and not the format (the production shape). Vocabulary in
-`pick-creative-mechanic`. AdSwipeFile does not tag mechanics: read them from an ad's `structure`
-and `breakdown`.
+`pick-creative-mechanic`. The library tags up to two mechanics per ad with those slugs:
+`list_ads` with `mechanic` finds ads built on a move. Ad results don't show the tag, so for one ad,
+read its move from `structure` and `breakdown`. Ads not read yet match no tag filter.
 
 **Funnel job**: what the creative itself has to finish. `close` carries the viewer to a decision
 inside the ad (full proof, a call to action). `click` opens one sharp loop and hands the explaining
@@ -68,8 +69,13 @@ use cases. A gap that is a flaw for `close` is the design for `click`.
 **Concept**: anchor + persona + awareness stage + trigger moment + angle + offer statement +
 mechanic + format + hook. A concept missing a step is an idea, not a concept.
 
+**Awareness stage**: how much the viewer already knows, as `list_ads` filters it with
+`awareness`: `unaware`, `problem-aware`, `solution-aware`, `product-aware`, `most-aware`. Each ad
+carries its `awareness` tag.
+
 **Hook**: the opening system: first spoken line, first visual, first on-screen text, read together.
-Its tactic comes from `list_hooks`.
+Its tactic comes from `list_hooks`; each ad carries its `hook_tactic` and `hook_line`, and
+`list_ads` filters on `hook`.
 
 **Visual format**: the production shape (talking head, us vs them, notes app), from
 `list_visual_formats`; `get_format` gives a format's how to tell and how to build.
@@ -84,6 +90,9 @@ Its tactic comes from `list_hooks`.
 | Vocabularies | `list_visual_formats`, `get_format`, `list_hooks`, `list_niches`, `list_formats` |
 | Competitors | `follow_brand`, `list_followed_brands`, `list_followed_ads`, `unfollow_brand` |
 | Keep references | `save_ad`, `set_ad_note`, `create_board`, `add_ad_to_board`, `list_saved_ads`, `list_boards`, `share_board` |
+| Clients apart | `list_workspaces`, then `workspace` on saves, follows and boards |
+| Send to a client | `share_board` (and `unshare_board`) |
+| Report a gap | `submit_feedback` (a missing brand, a wrong tag, a broken result) |
 | Calls left | `get_usage` |
 
 ## Writes

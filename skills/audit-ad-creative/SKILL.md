@@ -5,6 +5,15 @@ description: Audit one ad creative, your own or a reference from the AdSwipeFile
 
 # Audit an ad creative
 
+> **Needs the AdSwipeFile connector.** This skill reads the AdSwipeFile ad library of Meta ads
+> through its MCP server. If no AdSwipeFile tools (`search_library`, `list_ads`) are available, say
+> so before anything else and give the step for this host. Claude Code:
+> `claude mcp add --transport http adswipefile https://adswipefile.com/api/mcp`. claude.ai or
+> ChatGPT: add `https://adswipefile.com/api/mcp` as a custom connector. Other clients:
+> https://adswipefile.com/docs/mcp?utm_source=agent-skill&utm_medium=referral&utm_campaign=audit-ad-creative.
+> Connecting opens a sign-in to an AdSwipeFile account. Steps that need only the user's own material
+> can go on; never invent ads, brands or links in place of the library.
+
 A diagnosis of the creative itself, from the scroller's seat first and the strategist's desk second.
 It explains what the creative does; it never explains performance from the creative alone. Words
 such as anchor, persona, funnel job and mechanic are used as the `creative-strategy` skill's
@@ -62,7 +71,8 @@ Run them silently; they produce findings, not headings.
   descriptor to an empty superlative, keep the descriptor and replace the superlative.
 - **Native voice**: would a customer say it? Elevated words pass when they do a job.
 - **CTA**, when the job is `close`: specific, matched to stage, ideally saying who it's for.
-- **Mechanic**: name it and check it completes (`pick-creative-mechanic`).
+- **Mechanic**: name it and check it completes (`pick-creative-mechanic`; `list_ads` with
+  `mechanic` finds ads that complete the same move).
 - **Format**: right container for the angle, mechanic and stage? Does the visual explain or
   decorate? Comparisons: rows map one to one, both sides styled the same. "Right idea, wrong vessel"
   names the better format (`get_format` for how it is built).
@@ -91,7 +101,8 @@ checks as sections; a batch gets one note per ad plus a line on patterns across 
 
 - **The user's own ad**: the fix list stays in the reply. For each fix that needs a model, point to
   reference ads: the `examples` from `get_format` for a format change, or `list_ads` by
-  `visual_format` or `hook` with `sort: "longest_running"`. Read two or three with `get_ads`, link
+  `visual_format`, `hook` or `mechanic`, with the ad's `awareness` stage and
+  `sort: "longest_running"`. Read two or three with `get_ads`, link
   each by its `url`, and say what to borrow.
 - **A reference**: when the user asks, `save_ad` it and `set_ad_note` with the keeper and the move to
   borrow.

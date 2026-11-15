@@ -14,7 +14,11 @@ Explicit user instructions take priority over this guidance.
   If it answers, the connection works: say so and name a few niches it returned.
   Do not call more tools just to check.
 - If tools are unavailable or sign-in fails, say the connection is not
-  verified and direct the user to connect or reconnect AdSwipeFile in the host.
+  verified and give the step for the host. Claude Code:
+  `claude mcp add --transport http adswipefile https://adswipefile.com/api/mcp`.
+  claude.ai or ChatGPT: add `https://adswipefile.com/api/mcp` as a custom
+  connector, or reconnect it. Other clients:
+  https://adswipefile.com/docs/mcp?utm_source=agent-skill&utm_medium=referral&utm_campaign=get-started.
   Do not claim the plugin is ready because this skill loaded.
 - For "what can it do", explain without calling a tool.
 - If the user already asked a real question, answer it with the tools instead
