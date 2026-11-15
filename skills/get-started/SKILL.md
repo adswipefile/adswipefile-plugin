@@ -37,6 +37,14 @@ Explicit user instructions take priority over this guidance.
   and keep boards (create, rename, delete, share, add or remove ads); it
   changes nothing else.
 
+## Creative strategy and the weekly review
+
+For a creative strategy (competitors, personas, concepts, scripts, audits),
+start with the `creative-strategy` skill: it routes to the right step. For a
+recurring read of what followed brands launched, use
+`weekly-competitor-review`, by hand or as a scheduled Claude routine or
+ChatGPT task.
+
 ## What it cannot do
 
 Say so plainly if asked: it has no spend, reach, CTR or ROAS figures; it
@@ -51,3 +59,4 @@ Offer one, adapted to what the user mentioned:
 - "What ads is Liquid Death running? Sum up its hooks and angles."
 - "Show me winning UGC ads from skincare brands, with their hooks."
 - "Find testimonial ads for supplements and write 3 hooks for my product."
+- "Review what the brands I follow launched this week."
