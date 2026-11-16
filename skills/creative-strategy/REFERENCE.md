@@ -6,13 +6,13 @@ description disagree, the tool is right.
 
 ## Two kinds of evidence
 
-| | AdSwipeFile | The user's own material |
+| | Ad Swipe File | The user's own material |
 | --- | --- | --- |
 | Whose ads | Other brands' public Meta ads | The user's brand |
 | What it knows | Copy, tags, breakdowns, run dates | Product facts, reviews, results |
 | What it can prove | Nothing about results | Only what the user's own numbers show |
 
-- **AdSwipeFile never proves.** A long run (`run.days_running`, `sort: "longest_running"`) is a
+- **Ad Swipe File never proves.** A long run (`run.days_running`, `sort: "longest_running"`) is a
   reason to study an ad. Never state an ad's spend, ROAS or conversions, never say it "works",
   "worked", is "a winner" or beat another. `why_it_works` and `breakdown` say how an ad is built to
   work. Write "kept running for 94 days".
@@ -29,7 +29,7 @@ description disagree, the tool is right.
 
 ## Words
 
-AdSwipeFile words are used as its tools define them: run, breakdown, brand patterns, visual format,
+Ad Swipe File words are used as its tools define them: run, breakdown, brand patterns, visual format,
 hook tactic, board, saved ad, followed brand. The words below are the strategy layer on top.
 
 **Anchor**: the one pain or desire a concept is built on, named precisely ("wakes at 3am and can't
@@ -82,12 +82,15 @@ Its tactic comes from `list_hooks`; each ad carries its `hook_tactic` and `hook_
 
 ## Tools by job
 
-| Job | AdSwipeFile tools |
+| Job | Ad Swipe File tools |
 | --- | --- |
-| Find references | `search_library`, `list_ads` (`niche`, `visual_format`, `hook`, `offer_type`, `talent`, `awareness`, `mechanic`, `min_days`, `active_month`, `sort`) |
+| Find references | `search_library`, `list_ads` (`niche`, `visual_format`, `hook`, `offer_type`, `talent`, `awareness`, `mechanic`, `status`, `min_days`, `active_month`, `sort`) |
 | One brand | `list_ads` with `brand` (first page carries `brand_patterns`), `list_brands` |
 | Read ads | `get_ads` (up to 25 per call), `get_ad` (`breakdown` with its `structure`, `why_it_works`, `run`) |
 | Vocabularies | `list_visual_formats`, `get_format`, `list_hooks`, `list_niches`, `list_formats` |
+| Niche direction | `get_trends` (share of a niche's active ads by format, hook and asset type, 30 days against the 30 before; what brands make more of, never what performs) |
+| Brand by website | `get_brand_by_domain` |
+| Similar ads | `find_similar_ads` (other brands' ads with the same hook, format or niche) |
 | Competitors | `follow_brand`, `list_followed_brands`, `list_followed_ads`, `unfollow_brand` |
 | Keep references | `save_ad`, `set_ad_note`, `create_board`, `add_ad_to_board`, `list_saved_ads`, `list_boards`, `share_board` |
 | Clients apart | `list_workspaces`, then `workspace` on saves, follows and boards |
@@ -97,7 +100,7 @@ Its tactic comes from `list_hooks`; each ad carries its `hook_tactic` and `hook_
 
 ## Writes
 
-- AdSwipeFile writes change only the user's own saves, notes, follows and boards. Make one only when
+- Ad Swipe File writes change only the user's own saves, notes, follows and boards. Make one only when
   the user asked for it or agreed.
 - Strategy outputs (competitor maps, personas, concepts, scripts, learnings) go in the reply, or a
   file when the client can write files. They are drafts the user approves.

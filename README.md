@@ -1,10 +1,10 @@
-# AdSwipeFile plugin
+# Ad Swipe File plugin
 
 Winning Facebook and Instagram ads, competitor ads, hooks and angles, in
-Claude, ChatGPT and Codex: the [AdSwipeFile](https://adswipefile.com) ad
+Claude, ChatGPT and Codex: the [Ad Swipe File](https://adswipefile.com) ad
 library, searched by your AI agent.
 
-AdSwipeFile files real Meta ads by brand, niche (industry) and format (UGC,
+Ad Swipe File files real Meta ads by brand, niche (industry) and format (UGC,
 before and after, testimonial, comparison…), each with its audiences and
 copy. This plugin connects your AI assistant to the library over MCP and adds
 skills that tell it how to research competitor ads, read hooks and angles,
@@ -19,6 +19,7 @@ and cite every ad it uses.
 - "Compare the ads of my competitors and tell me which angles nobody runs."
 - "Show me the ads I've saved and what they have in common."
 - "What have the brands I follow launched this week?"
+- "Which hooks and formats are rising in skincare ads?"
 - "Write my weekly competitor review."
 - "Map my competitors, then give me 5 ad concepts for my product with reference ads."
 - "Audit this ad and tell me what to fix."
@@ -30,8 +31,8 @@ and cite every ad it uses.
 | `plugin.json`, `mcp.json` | The plugin in the [Agent Plugins](https://agent-plugins.org) format, for ChatGPT, Codex and other clients |
 | `.codex-plugin/plugin.json` | Codex manifest |
 | `.claude-plugin/plugin.json` | Claude plugin manifest |
-| `.claude-plugin/marketplace.json` | Marketplace entry, so this repo can be added as a Claude Code marketplace |
-| `.cursor-plugin/`, `.grok-plugin/` | Cursor and Grok manifests |
+| `.claude-plugin/marketplace.json` | Marketplace entry, so this repo can be added as a Claude Code marketplace (generated for this repo) |
+| `.cursor-plugin/`, `.grok-plugin/` | Cursor and Grok manifests (generated for this repo) |
 | `.mcp.json` | The remote MCP server, `https://adswipefile.com/api/mcp` |
 | `skills/` | Fifteen skills. Using the library: get started, find winning ads, competitor ads, write hooks from ads, review saved ads. Creative strategy, with the library as evidence: creative strategy (start here), map competitors, track competitor ads, weekly competitor review, map personas, generate ad concepts, pick a creative mechanic, audit an ad creative, teach an ad breakdown, record a creative learning |
 | assets/ | Icon and logo |
@@ -63,19 +64,20 @@ connector. Setup for other clients: https://adswipefile.com/docs/mcp.
 
 ## Sign-in and the data it sends
 
-Connecting opens a browser sign-in to your AdSwipeFile account (OAuth 2.1).
-An AdSwipeFile account is required; there is no API key to copy. The plugin asks for read
+Connecting opens a browser sign-in to your Ad Swipe File account (OAuth 2.1).
+An Ad Swipe File account is required; there is no API key to copy. The plugin asks for read
 access to the ad library and to the ads you saved and the brands you follow on
-the site (`mcp:read`), and for permission to change your follows and boards
-(`mcp:write`). Most tools read. The write tools follow or unfollow a library
-brand, create or delete a board, turn a board's share link on or off, and put
-an ad on a board or take it off, only when you ask; they change nothing outside
-your account. A connection approved before the write tools reads only:
-reconnect and approve again to use them.
+the site (`mcp:read`), and for permission to change your saves, notes, follows and
+boards (`mcp:write`). Most tools read. The write tools save or unsave an ad and note
+it, follow or unfollow a library brand, create, rename or delete a board, turn
+a board's share link on or off, put an ad on a board or take it off, and send
+the team a feedback report, only when you ask; they change nothing outside
+your account and the report you send. A connection approved before the write
+tools reads only: reconnect and approve again to use them.
 
 The plugin talks to one server, `adswipefile.com`. When the assistant calls a
 tool, the tool's arguments, such as a search query or a brand, niche or format,
-are sent to that server. AdSwipeFile records each tool call in its product
+are sent to that server. Ad Swipe File records each tool call in its product
 analytics (PostHog): the tool name, its arguments (an argument containing an
 email address or a phone or card number is replaced first), timing, how the call
 turned out (how many results, or that nothing matched, the call was refused or
@@ -89,7 +91,7 @@ policy](https://adswipefile.com/privacy).
 
 ## Scope
 
-AdSwipeFile is a reference library of ad creative. It holds no spend, reach or
+Ad Swipe File is a reference library of ad creative. It holds no spend, reach or
 performance figures, cannot create, run or buy ads, and does not generate
 images or video. It is a curated collection, not a live feed of Meta's ad
 library.
@@ -97,5 +99,4 @@ library.
 ## Support
 
 [adswipefile.com/contact](https://adswipefile.com/contact) or
-hello@adswipefile.com. Report security issues as described in
-[SECURITY.md](./SECURITY.md).
+hello@adswipefile.com. Report security issues to the same address.
