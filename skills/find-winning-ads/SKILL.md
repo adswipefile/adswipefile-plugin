@@ -61,8 +61,6 @@ brands make more of, not what performs, then list ads in the top tags.
   a long run is a reason to study an ad, not proof of its results.
 - For each ad give the brand, niche, formats and its page `url`. Show the
   `image` when the host renders images.
-- `created_at` is when the ad was added to the library, not when it ran.
-  Never call it a launch or run date.
 - If fewer ads match than asked, say how many there are. Offer to widen the
   search (drop the format, or try a neighbouring niche) instead of padding.
 - Use `next_cursor` only when the user asks for more. When the list answers

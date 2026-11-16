@@ -84,7 +84,7 @@ Its tactic comes from `list_hooks`; each ad carries its `hook_tactic` and `hook_
 
 | Job | Ad Swipe File tools |
 | --- | --- |
-| Find references | `search_library`, `list_ads` (`niche`, `visual_format`, `hook`, `offer_type`, `talent`, `awareness`, `mechanic`, `status`, `min_days`, `active_month`, `sort`) |
+| Find references | `search_library`, `list_ads` (`niche`, `visual_format`, `hook`, `season`, `awareness`, `mechanic`, `status`, `min_days`, `followed`, `sort`) |
 | One brand | `list_ads` with `brand` (first page carries `brand_patterns`), `list_brands` |
 | Read ads | `get_ads` (up to 25 per call), `get_ad` (`breakdown` with its `structure`, `why_it_works`, `run`) |
 | Vocabularies | `list_visual_formats`, `get_format`, `list_hooks`, `list_niches`, `list_formats` |
