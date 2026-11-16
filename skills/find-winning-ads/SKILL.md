@@ -65,7 +65,7 @@ brands make more of, not what performs, then list ads in the top tags.
   Never call it a launch or run date.
 - If fewer ads match than asked, say how many there are. Offer to widen the
   search (drop the format, or try a neighbouring niche) instead of padding.
-- Use `nextCursor` only when the user asks for more. When the list answers
+- Use `next_cursor` only when the user asks for more. When the list answers
   with a `note` that it was cut short, pass it on once with its link and
   narrow with filters instead of paging.
 
