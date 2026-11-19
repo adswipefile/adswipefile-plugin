@@ -1,8 +1,9 @@
 # Ad Swipe File plugin
 
-Winning Facebook and Instagram ads, competitor ads, hooks and angles, in
-Claude, ChatGPT and Codex: the [Ad Swipe File](https://adswipefile.com) ad
-library, searched by your AI agent.
+An ad library and ad spy for Facebook and Instagram ads, in Claude, ChatGPT
+and Codex: your AI agent searches [Ad Swipe File](https://adswipefile.com) for
+winning ads and competitor ads, pulls ad examples and ad inspiration, and
+reads their hooks and angles.
 
 Ad Swipe File files real Meta ads by brand, niche (industry) and format (UGC,
 before and after, testimonial, comparison…), each with its audiences and
