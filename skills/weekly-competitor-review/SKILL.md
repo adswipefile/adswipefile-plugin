@@ -60,7 +60,7 @@ Aim for under 350 words:
 - **Nothing new**: the followed brands with no ads in the window, in one line.
 
 End with the window covered and the line: this covers only followed brands' ads Ad Swipe File pulled;
-followed pages are checked every Monday and Thursday, so a brand's newest ad can be a few days old.
+followed pages are refreshed daily, so a brand's newest ad can be a day old.
 
 ## Run unattended
 

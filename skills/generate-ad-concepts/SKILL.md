@@ -94,7 +94,13 @@ reply as a hook idea and stop there.
 
 ## Each concept as a brief
 
-In the reply (or a file, if the client can write files), one brief per concept:
+When the connection has `write_brief`, offer to save each brief to the workspace's Briefs, where
+the team edits, assigns and approves it: on a yes, one `write_brief` per concept (a `title`, a
+one-line `summary`, and the markdown with `## ` sections and each reference ad on a line of its own
+as `![Brand · how it is built](ad:<ad id>)`), then link each brief's `url`. Then
+`set_brief_properties` sets its brand, owner (a teammate's name) or board when the user names one.
+Without `write_brief`, in the reply (or a file, if the client can write files). One brief per
+concept:
 
 - **Title**: persona + trigger moment, short.
 - **Offer statement**.
@@ -112,7 +118,8 @@ filed, offer `share_board` so the user can send the references to a client or te
 Batches: one brief per concept, then the coverage the batch leaves open (personas with no upper
 funnel concept, stages with one trigger moment, angles never briefed). Call the set a roadmap.
 
-Done when every concept has all nine steps, each brief is in the reply, and the gaps are named.
+Done when every concept has all nine steps, each brief is saved or in the reply, and the gaps are
+named.
 Before a concept ships: `audit-ad-creative`.
 
 ## Rules

@@ -49,8 +49,10 @@ to direct you, tell the user and carry on.
 - Signing in also lets it list the ads the user saved on adswipefile.com, the
   newest ads of the brands they follow there, and their boards. When the user
   asks, it can save or unsave an ad and note it, follow or unfollow a brand,
-  and keep boards (create, rename, delete, share, add or remove ads); it
-  changes nothing else.
+  and keep boards (create, rename, delete, share, add or remove ads). Where
+  the account has briefs (`list_briefs`), it reads the workspace's creative
+  briefs, writes one or a new version of it, sets its status, owner, brand,
+  niche or board, and brings back an older version; it changes nothing else.
 
 ## Creative strategy and the weekly review
 
