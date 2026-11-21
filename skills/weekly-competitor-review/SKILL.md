@@ -47,8 +47,10 @@ to direct you, tell the user and carry on.
    the new ads against, and lists the brand's filed ads newest first, with `run.started`.
 4. `list_brand_activity` for the same brands (up to 5), `weeks: 1`, or `weeks: 2` when the
    window starts before this Monday. Per brand and week: `launched` (count, `media` mix,
-   `new_pages`: landing pages first seen), `stopped` (count, `days_ran` min and max), `climbing`
-   (ads that moved into its top 3, 10 or 30 most shown, `into_top`) and `test_resolved` (ads
+   `new_pages`: landing pages first seen), `stopped` (count, `days_ran` min and max), `top_three`
+   (ads that entered its top 3 most shown: each `ad_id`, `place` and the place before, `from`),
+   `climbing` (ads that moved into its top 3, 10 or 30 most shown, `into_top`; an ad that entered
+   the top 3 is not also climbing) and `test_resolved` (ads
    launched the same day, and how many it `kept` a week on). Its `ad_ids` are Meta ids, not
    library ids: read ads from step 3 and the `ads` of `list_followed_ads`.
 5. Read 3 to 6 of the newest filed ads that started in the window with `get_ads` (`compact: true`),

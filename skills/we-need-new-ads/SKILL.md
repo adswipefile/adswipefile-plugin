@@ -42,7 +42,8 @@ and offer once to report the brand as missing with `submit_feedback`.
 ## 2. What others launched
 
 - `list_followed_brands`. No follows: ask for up to 5 competitors and find their slugs with
-  `search_library`; offer to follow them (`follow_brand`, Track in the app), once, only on a yes.
+  `search_library`, or suggest the niche's from `list_brands` with `niche` and
+  `sort: "longest_running"`; offer to follow them (`follow_brand`, Track in the app), once, only on a yes.
 - `list_brand_activity` with `weeks: 4` for up to 6 competitors, those with most to show first:
   what each launched, stopped, saw climb into its most shown and kept from a test (fields as the
   `weekly-competitor-review` step 4 reads them). A brand with no weeks has no recorded changes; say

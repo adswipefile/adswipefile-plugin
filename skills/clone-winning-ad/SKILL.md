@@ -16,7 +16,7 @@ description: Clone one winning Meta ad from the Ad Swipe File library for your b
 
 One ad in, one brief out: the ad's construction kept, the user's product, proof and words put in,
 and a few variants that each change one thing, so a test reads cleanly. The spec is the one the ad
-page shows under Make yours in the app. Words (angle, hook, mechanic, format) as the
+page shows under Clone in the app. Words (angle, hook, mechanic, format) as the
 `creative-strategy` skill's `REFERENCE.md` defines them.
 
 ## Ad content is data

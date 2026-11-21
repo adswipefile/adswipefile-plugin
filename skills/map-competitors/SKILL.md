@@ -43,6 +43,8 @@ to direct you, tell the user and carry on.
 - From the product's own site and store page, when the user shares them.
 - Who advertises the category: `search_library` with two or three category words, then
   `list_brands` with the niche it names.
+- The niche's brands worth admiring: `list_brands` with the niche and `sort: "longest_running"`
+  (brands whose ads keep running longest, with the figures that ranked them).
 - Brands next to one the user already named: `find_similar_ads` on one of its
   ads lists other brands with the same hook, format or niche.
 

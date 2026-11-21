@@ -89,7 +89,7 @@ Its tactic comes from `list_hooks`; each ad carries its `hook_tactic` and `hook_
 | Every followed brand | `list_ads` with `followed: true` and `per_brand` (each brand's top N, most shown, one card per creative) |
 | Read ads | `get_ads` (up to 25 per call, `compact: true` for many), `get_ad` (`breakdown` with its `structure`, `why_it_works`, `run`) |
 | Remake an ad | `get_ad` without `compact`: `remix_spec` (`hook`, `angle`, `offer`, `structure`, `beats`, `scenes`, `script`, and `modes` `same_angle`, `new_format`, `other_niche`, each with `keep`, `change`, `brief`) and `make_yours.template` (the script with [slots]) |
-| A brand's weeks | `list_brand_activity` (`weeks` 1 to 12: launched, stopped, climbing into its most shown, tests resolved; its `ad_ids` are Meta ids, not library ids) |
+| A brand's weeks | `list_brand_activity` (`weeks` 1 to 12: launched, stopped, entered its top 3, climbing into its most shown, tests resolved; its `ad_ids` are Meta ids, not library ids) |
 | Vocabularies | `list_visual_formats`, `get_format`, `list_hooks`, `list_niches`, `list_formats` |
 | Niche direction | `get_trends` (share of a niche's active ads by format, hook and asset type, 30 days against the 30 before; what brands make more of, never what performs) |
 | Brand by website | `get_brand_by_domain` |

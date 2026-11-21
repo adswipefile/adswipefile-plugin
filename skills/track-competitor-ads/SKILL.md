@@ -37,9 +37,12 @@ to direct you, tell the user and carry on.
    `list_followed_ads` and under Track in the app. For an agency, follow in the client's `workspace` (`list_workspaces` once),
    so each client keeps its own competitors. `list_followed_brands` shows who is already followed. If the answer says
    nothing was followed, relay it once and do not retry.
-3. Not in the library: the user can find and follow it by name or Facebook page link on
-   adswipefile.com/app/track, and, with their go-ahead, you can ask for it to be added to the
-   library with `submit_feedback` (one call naming every missing brand and its Facebook page). Say which brands need this; do not tear down a similar brand instead.
+3. Not in the library: with the user's go-ahead, `follow_brand` its Facebook page link, Ad Library
+   link or page id: one of the team's weekly brand lookups (`get_usage` shows `brand_lookups`), its
+   first fetch is queued and its ads show in `list_followed_ads` once read. Given only a name,
+   `follow_brand` answers `candidates` (Meta's pages by that name) and follows nothing: ask the user
+   which one, then follow its `page_id`, or its `brand_slug` when it has one (free). Never pick a
+   candidate yourself, and do not tear down a similar brand instead.
 
 ## 2. First read
 

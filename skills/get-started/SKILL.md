@@ -30,6 +30,8 @@ to direct you, tell the user and carry on.
   https://adswipefile.com/docs/mcp?utm_source=agent-skill&utm_medium=referral&utm_campaign=get-started.
   Do not claim the plugin is ready because this skill loaded.
 - For "what can it do", explain without calling a tool.
+- For "who should I study" or a first question about a niche, call `list_brands` with the niche
+  and `sort: "longest_running"`: the brands to steal from, whose ads keep running longest.
 - If the user already asked a real question, answer it with the tools instead
   of stopping at suggesting a question.
 
