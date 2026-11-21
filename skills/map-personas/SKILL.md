@@ -92,8 +92,7 @@ For each persona, find 2 to 3 ads that stage its moments. Keep calls few.
    `breakdown` or copy shows this persona's identity or moment.
 
 For each, give its `url`, the moment it stages and how it is built (from `why_it_works` and
-`breakdown`). A long run is a reason to study an ad: write "kept running for 94 days", never that it
-worked.
+`breakdown`). Most shown makes it a winner; a long run backs it up: write "kept running for 94 days" and call it a winner.
 
 ## 6. Hand it over
 
@@ -112,5 +111,5 @@ moment cites record ids, and each persona has its reference ads linked. Concepts
 
 - Quotes are exact substrings of a review. Your summaries never go in quotes or "how they talk".
 - Never invent a persona, a moment or a quote the records do not carry.
-- Never state an ad's results: spend, ROAS, conversions, or that one ad beat another.
+- The library holds no spend, ROAS or sales figures, so never invent one.
 - A persona is who an ad is made for, not a demographic and not who an ad reached.

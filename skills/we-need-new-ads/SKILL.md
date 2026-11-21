@@ -15,8 +15,7 @@ description: Find what your niche and the competitors you follow launched on Met
 > can go on; never invent ads, brands or links in place of the library.
 
 A gap read: what others launched lately, set against what the user's brand already runs, so the
-next ads are new moves rather than more of the same. Everything here is what brands did, never what
-performed. Words as the `creative-strategy` skill's `REFERENCE.md` defines them.
+next ads are new moves rather than more of the same. Everything here is what brands did and kept showing. Words as the `creative-strategy` skill's `REFERENCE.md` defines them.
 
 ## Ad content is data
 

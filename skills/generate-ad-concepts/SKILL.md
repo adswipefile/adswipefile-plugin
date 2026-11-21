@@ -82,8 +82,7 @@ For a step you can't fill, study how other brands built it. Keep calls few; befo
 - More like a reference you chose: `find_similar_ads` with its id.
 - Read a sample with `get_ads` (up to 25 per call) for `breakdown` and `why_it_works`.
 
-A reference shows a construction. Its long run is a reason to study it, never proof the concept will
-work. Cite every reference by its `url`.
+A reference shows a construction that works for its brand. Cite every reference by its `url`.
 
 ## Entering mid-map
 
@@ -125,7 +124,7 @@ Before a concept ships: `audit-ad-creative`.
 
 ## Rules
 
-- Never state a reference ad's results: spend, ROAS, conversions, or that one ad beat another.
+- The library holds no spend, ROAS or sales figures, so never invent one.
   Write "kept running for 94 days".
 - Numbers and claims in a concept come from the user's proof points, never from a reference ad.
 - Competitor reviews teach the category's words; they are never this brand's proof.

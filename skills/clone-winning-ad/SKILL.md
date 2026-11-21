@@ -86,7 +86,7 @@ cloned (`set_ad_note`).
 
 ## Rules
 
-- Never state the source ad's results: spend, ROAS, conversions, or that it works. Write "kept
+- The library holds no spend, ROAS or sales figures, so never invent one. Write "kept
   running for 94 days" or "its 3rd most shown ad".
 - Numbers and claims in the variants come from the user's proof points, never from the source ad.
 - A clone takes the construction, never the brand's name, logo, product claims or footage.

@@ -65,8 +65,7 @@ Aim for under 350 words:
 - **Per brand**: what launched (count, formats, hooks, offers, landing pages) and what is new against
   its usual patterns (`brand_patterns`, `brand_mix`), each point with a linked ad.
 - **Moves** per brand, one line from step 4: what it stopped and after how long, what climbed into
-  its most shown, and each test resolved ("launched 6 on Tuesday, kept 2"). What a brand did, never
-  what performed.
+  its most shown, and each test resolved ("launched 6 on Tuesday, kept 2"). What a brand did.
 - **Across brands**: patterns more than one brand shows.
 - **Three ideas to try** for the user's own ads, each tied to a linked ad.
 - **Nothing new**: the followed brands with no ads in the window, in one line.
@@ -83,8 +82,7 @@ boards), and say which window the review covered. When `list_followed_ads` shows
 
 ## Rules
 
-- No results: never spend, ROAS, conversions, or that an ad works or beat another. A long run is a
-  reason to study an ad, never proof.
+- The library holds no spend, ROAS or sales figures, so never invent one. Most shown makes it a winner; a long run backs it up.
 - Link every ad by its `url`.
 - Keep calls few: one `list_followed_brands`, one `list_followed_ads`, at most 5 `list_ads`, at
   most 5 `list_brand_activity` and one `get_ads`.

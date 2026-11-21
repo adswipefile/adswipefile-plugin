@@ -92,7 +92,7 @@ Turn the implication into references to make the next creatives from:
 
 ## Rules
 
-- Never borrow a library ad's results: it has none. A long run is a reason to study it; write "kept
+- The library holds no spend, ROAS or sales figures, so never invent one. Most shown makes it a winner; a long run backs it up; write "kept
   running for 94 days".
 - Never invent the user's numbers: quote them as given (from Win & Scale, an export or a paste), with
   their source. A library

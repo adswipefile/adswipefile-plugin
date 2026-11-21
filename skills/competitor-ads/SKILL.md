@@ -60,11 +60,10 @@ to direct you, tell the user and carry on.
 - Base every claim on an ad you listed or read, and link that ad's `url`.
 - Say the teardown covers the brand's ads in this library, not everything the
   brand has run.
-- Never state an ad's results: spend, ROAS, conversions, or that one ad beat
-  another. The library holds no such data. "Winning" in this library means an
+- The library holds no spend, ROAS or sales figures, so never invent one. "Winning" in this library means an
   ad the brand shows most, by Meta's impressions order (`most_shown`, the
   default for one brand); its run (`sort: "longest_running"`) or many variants
-  is a reason to study an ad, not proof that it performed.
+  back it up.
 - If a `get_ads` answer carries a `note` (a breakdown without its
   layers, or a list cut short), work from what came and pass the note on once.
 

@@ -83,8 +83,8 @@ made, and `weekly-competitor-review` to keep the competitors in view.
 ## Rules
 
 - Each stage follows its skill's rules; the strictest wins.
-- No results: never spend, ROAS, conversions, or that an ad works. Most shown and days running are
-  reasons to study an ad.
+- The library holds no spend, ROAS or sales figures, so never invent one. Most shown makes an ad a
+  winner; days running back it up.
 - Link every ad by its `url`.
 - Stop and ask when a stage comes back empty (no competitor in the library, a niche too small for
   trends); never fill it with ads from another brand or niche without saying so.

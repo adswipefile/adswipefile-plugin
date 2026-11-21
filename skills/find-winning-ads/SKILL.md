@@ -58,7 +58,7 @@ brands make more of, not what performs, then list ads in the top tags.
 - Call `list_ads` with the slugs, and a `limit` close to what the user asked
   for. Results are the newest additions to the library first. For "what's
   working" or "what's been running longest", pass `sort: "longest_running"`;
-  a long run is a reason to study an ad, not proof of its results.
+  most shown makes it a winner; a long run backs it up.
 - For each ad give the brand, niche, formats and its page `url`. Show the
   `image` when the host renders images.
 - If fewer ads match than asked, say how many there are. Offer to widen the
@@ -76,5 +76,5 @@ task needs the copy (see the write-hooks-from-ads skill).
 
 Offer, once, to keep the ads the user likes: `save_ad`, or a board named for
 the search (`create_board`, `add_ad_to_board`), with a `set_ad_note` on why
-each is worth studying. Only on a yes. They show in the app under Saved and
+each is a winner. Only on a yes. They show in the app under Saved and
 Boards.

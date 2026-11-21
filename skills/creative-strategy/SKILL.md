@@ -17,7 +17,7 @@ description: Start here for creative strategy on Meta ads with Ad Swipe File as 
 These skills work one loop: research, ideate, make, review, learn. Two kinds of material feed it:
 
 - **Other brands' public Meta ads**, from the Ad Swipe File tools: copy, tags, breakdowns, run dates.
-  They show how ads are built, never how they performed.
+  They show how ads are built and which ones brands show most.
 - **The user's own material**: product facts, customer reviews, their ads and their results. It
   comes from the user: pasted, uploaded, linked, or from another connector they have. Ask for it
   plainly; never invent it.
@@ -88,8 +88,8 @@ to `competitor-landscape`.
   (`write_brief`) only when the user asks or agrees.
 - Say where each write lands in the app, so the agent and the site stay one workspace: a brief
   under Briefs, a board under Boards, a save under Saved, a follow under Track.
-- Every cited ad is linked by its `url`. The library holds no spend, ROAS or conversions: a long
-  run is a reason to study an ad, never proof it worked.
+- Every cited ad is linked by its `url`. The library holds no spend, ROAS or sales figures, so never invent one. Most
+  shown makes an ad a winner; a long run backs it up.
 - Results-type calls count against the user's calls: read samples with `get_ads`, keep calls few.
   Before a long run of calls (a batch of concepts, several competitors), `get_usage` says how many
   are left, at no cost.

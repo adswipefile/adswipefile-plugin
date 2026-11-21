@@ -10,12 +10,12 @@ description disagree, the tool is right.
 | --- | --- | --- |
 | Whose ads | Other brands' public Meta ads | The user's brand |
 | What it knows | Copy, tags, breakdowns, run dates | Product facts, reviews, results |
-| What it can prove | Nothing about results | Only what the user's own numbers show |
+| Spend, ROAS, sales | None | The user's own numbers |
 
-- **Ad Swipe File never proves.** A long run (`run.days_running`, `sort: "longest_running"`) is a
-  reason to study an ad. Never state an ad's spend, ROAS or conversions, never say it "works",
-  "worked", is "a winner" or beat another. `why_it_works` and `breakdown` say how an ad is built to
-  work. Write "kept running for 94 days".
+- **Winning is the signal.** The ad its brand shows most (`place_in_brand`, `most_shown`) is a
+  winning ad: say so plainly. A long run (`run.days_running`, `sort: "longest_running"`) backs it
+  up. The library holds no spend, ROAS or sales figures, so never invent one. `why_it_works` and
+  `breakdown` say how an ad is built to work. Write "kept running for 94 days".
 - **Link every ad.** Each ad cited carries its `url`.
 - **The user's results are the user's.** Numbers about their ads come from them (pasted, uploaded,
   or another connector). Quote only numbers they gave, and say where each came from.
@@ -91,7 +91,7 @@ Its tactic comes from `list_hooks`; each ad carries its `hook_tactic` and `hook_
 | Remake an ad | `get_ad` without `compact`: `remix_spec` (`hook`, `angle`, `offer`, `structure`, `beats`, `scenes`, `script`, and `modes` `same_angle`, `new_format`, `other_niche`, each with `keep`, `change`, `brief`) and `make_yours.template` (the script with [slots]) |
 | A brand's weeks | `list_brand_activity` (`weeks` 1 to 12: launched, stopped, entered its top 3, climbing into its most shown, tests resolved; its `ad_ids` are Meta ids, not library ids) |
 | Vocabularies | `list_visual_formats`, `get_format`, `list_hooks`, `list_niches`, `list_formats` |
-| Niche direction | `get_trends` (share of a niche's active ads by format, hook and asset type, 30 days against the 30 before; what brands make more of, never what performs) |
+| Niche direction | `get_trends` (share of a niche's active ads by format, hook and asset type, 30 days against the 30 before; what brands make more of) |
 | Brand by website | `get_brand_by_domain` |
 | Similar ads | `find_similar_ads` (other brands' ads with the same hook, format or niche) |
 | Competitors | `follow_brand`, `list_followed_brands`, `list_followed_ads`, `unfollow_brand` |

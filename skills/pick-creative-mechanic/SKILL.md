@@ -66,7 +66,7 @@ nearest name.
    the concept's `awareness` stage and `niche`, and `sort: "longest_running"`. Too few: drop
    `niche`, then `awareness`; for a move outside the list, `search_library` with its plain words
    ("text message", "before after", "comment reply"). Then `get_ads` (up to 25 per call) and read
-   each `breakdown`. They show the construction, never a result.
+   each `breakdown`. They show how the ad is built.
 5. Pair at most two: one primary that shapes the concept, one secondary that adds a layer
    (`social-witness` under `implied-answer`; `reframe` inside `trojan-horse`).
 
@@ -82,8 +82,7 @@ and `why_it_works`. An incomplete mechanic is a finding for `audit-ad-creative`.
 
 ## Rules
 
-- Never state an ad's results: spend, ROAS, conversions, or that one ad beat another. A long run is
-  a reason to study an ad: write "kept running for 94 days".
+- The library holds no spend, ROAS or sales figures, so never invent one. Most shown makes it a winner; a long run backs it up: write "kept running for 94 days".
 - Link every cited ad by its `url`.
 - The library tags mechanics with these slugs, so `list_ads` with `mechanic` finds them, but an
   ad's result doesn't show its tag: a mechanic you name for one library ad is your reading of its

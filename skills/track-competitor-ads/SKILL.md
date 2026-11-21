@@ -15,8 +15,8 @@ description: Follow a brand's competitors on Ad Swipe File so their new Meta ads
 > can go on; never invent ads, brands or links in place of the library.
 
 Following puts a competitor's new ads in front of the user; the library reads and tags them
-(breakdowns, brand patterns) for study. Neither says how a competitor's ad performed: a long run is a
-reason to study it. Words and evidence rules: the creative-strategy skill's `REFERENCE.md`.
+(breakdowns, brand patterns) for study. Neither shows spend, but a long run marks a competitor's
+winning ad. Words and evidence rules: the creative-strategy skill's `REFERENCE.md`.
 
 Input: the direct and admired brands from `map-competitors`, or the brands the user names.
 

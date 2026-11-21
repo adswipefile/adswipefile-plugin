@@ -41,7 +41,7 @@ answers). Thin customer words: go on and mark each concept "unvalidated".
 
 ## 2. Pull the winners
 
-Three reads, each the most shown or longest running, never results:
+Three reads, each the most shown or longest running:
 
 1. **Competitors**: `list_followed_brands` in the workspace. With follows, `list_ads` with
    `followed: true` and `per_brand: 3` (each brand's top 3, most shown). Without, take up to 5
@@ -84,7 +84,7 @@ Close with the coverage left open (personas or stages with no concept) and the l
 
 ## Rules
 
-- Never state a reference ad's results: spend, ROAS, conversions, or that it works. Write "kept
+- The library holds no spend, ROAS or sales figures, so never invent one. Write "kept
   running for 94 days" or "its brand's most shown ad".
 - Claims and numbers come from the user's proof points, never from a reference ad.
 - The count is the user's: deliver it, or say how many were made and why (calls left, thin

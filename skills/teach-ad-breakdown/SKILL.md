@@ -41,7 +41,7 @@ to direct you, tell the user and carry on.
   move again.
 - **No ad chosen**: pick one: `list_ads` with `sort: "longest_running"` in their niche, or the newest
   from `list_followed_ads`, or `list_ads` with the `mechanic` or `hook` they are training on. A long
-  run made it worth studying; say that, never that it worked.
+  run backs it up; say it's a winner.
 
 ## The rep
 
@@ -72,7 +72,7 @@ what it risks. When it follows the pattern, say so and name what it does especia
 Plain words, short sentences; a technical term gets one sentence of explanation the first time.
 Quote the ad's real words and point to timestamps or parts of the image for every point. When you're
 guessing why the brand chose something, say it's your read. Talk to the learner directly and name
-the brand or viewer when you mean them. Commas, colons and full stops, no dashes. Link the ad by its `url`. Never state the ad's results.
+the brand or viewer when you mean them. Commas, colons and full stops, no dashes. Link the ad by its `url`. The library holds no spend, ROAS or sales figures, so never invent one.
 
 ## Keep the rep
 
@@ -83,7 +83,7 @@ file of moves.
 ## Rules
 
 - One ad per rep. Keep calls few: the ad, and its format's page when it helps.
-- A long run is a reason to study an ad, never proof it worked: write "kept running for 94 days".
+- Most shown makes it a winner; a long run backs it up: write "kept running for 94 days".
 
 Done when every observation is named, the missed moves are covered in order, the takeaway is one
 line, and the rep is saved where they asked.

@@ -69,10 +69,9 @@ impressions order as of the last daily pull, not everything they ran.
 ## Rules
 
 - Base every claim on an ad you listed or read, and link that ad's `url`.
-- Never state an ad's results: spend, ROAS, conversions, or that one ad beat another. The library
-  holds no such data. "Winning" means the ads a brand shows most, by Meta's impressions order
+- The library holds no spend, ROAS or sales figures, so never invent one. "Winning" means the ads a brand shows most, by Meta's impressions order
   (`place_in_brand`, `most_shown`). Places never compare across brands: brand A's 1 is not brand B's 1.
-  A long run, `copies` or many variants is a reason to study an ad, not proof it performed.
+  Most shown makes an ad a winner; a long run, `copies` or many variants back it up.
 - Shares are of the ads read or the links counted, and say so ("6 of the 9 ads read").
 - Keep calls few: one `list_followed_brands`, the `list_ads` pages step 2 needs, one or two
   `get_ads` for the sample, one `get_brand` per brand.

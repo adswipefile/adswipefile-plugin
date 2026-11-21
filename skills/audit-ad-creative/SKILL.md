@@ -34,7 +34,7 @@ to direct you, tell the user and carry on.
   the request, ask for it. A video seen as one frame plus a transcript is partial: say so, and judge
   the first frame and the words, not scenes you didn't see.
 - **A reference**: `get_ad` for its `breakdown` units, the first 3 seconds of speech,
-  `why_it_works` and `run`. Its run is a reason it's worth auditing, never a result.
+  `why_it_works` and `run`. Most shown makes it a winner; a long run backs it up.
 - **Context that sharpens it**: how the product is really used (ask when the ad doesn't show it),
   where it runs (cold feed, retargeting, a creator's account), and customers' words the user gives
   you. A judgment that leans on missing context names what would settle it.
@@ -118,7 +118,7 @@ checks as sections; a batch gets one note per ad plus a line on patterns across 
 
 ## Rules
 
-- Never state an ad's results. A long run is a reason to study it; write "kept running for 94 days".
+- The library holds no spend, ROAS or sales figures, so never invent one. Most shown makes it a winner; a long run backs it up; write "kept running for 94 days".
 - Keep reads few: one ad, then a small sample of references.
 
 Done when the job was classified before any check, every criticism ends in a fix, and the note has

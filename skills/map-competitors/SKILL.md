@@ -77,7 +77,7 @@ For each kept brand, note what later steps need:
 
 - Base "in the library" on a `search_library` hit, never on a guess.
 - Competitors' customers and reviews stay labelled as the competitor's.
-- Never state how a competitor's ads performed; the library holds no results.
+- The library holds no spend, ROAS or sales figures, so never invent one.
 - Keep calls few: one search per brand, no ad reads in this skill.
 
 Done when every brand on the map has its list, its reason and the ids it has, and the user has seen
