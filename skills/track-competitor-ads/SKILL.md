@@ -34,7 +34,7 @@ to direct you, tell the user and carry on.
 1. `search_library` with each plain name, or `get_brand_by_domain` when the user gave a website.
    Check the hit is the brand, not a namesake.
 2. In the library: with the user's go-ahead, `follow_brand` its slug, so its new ads show in
-   `list_followed_ads`. For an agency, follow in the client's `workspace` (`list_workspaces` once),
+   `list_followed_ads` and under Track in the app. For an agency, follow in the client's `workspace` (`list_workspaces` once),
    so each client keeps its own competitors. `list_followed_brands` shows who is already followed. If the answer says
    nothing was followed, relay it once and do not retry.
 3. Not in the library: the user can find and follow it by name or Facebook page link on
@@ -43,27 +43,33 @@ to direct you, tell the user and carry on.
 
 ## 2. First read
 
-For each followed library brand. With more than three, `get_usage` first says how many calls
-are left; read the brands that matter most first.
+All followed library brands at once. With more than three, `get_usage` first says how many calls
+are left.
 
-1. `list_ads` with `brand` (the first page carries `brand_patterns`): the most common structure, top
-   visual format and hook tactic, and the share of read ads with each trait. When it carries a
-   `note` instead, pass it on once with its link and work from the ads.
-2. `list_ads` with `brand` and `sort: "longest_running"`, `limit` 10.
-3. `get_ads` on three to six of those, spread across formats: hook tactic, visual format, mechanic
-   (read from `structure` and `breakdown`), offer.
+1. `list_ads` with `followed: true`, `per_brand: 10` and `sort: "longest_running"`:
+   each brand's 10 longest-running ads, one card per creative (`copies` counts the rest). Call again
+   with `next_cursor` while it is not null.
+2. For each brand, `list_ads` with `brand` and `limit: 1`: its first page carries `brand_patterns`
+   (the most common structure, top visual format and hook tactic, the share of read ads with each
+   trait) and `brand_mix` (offers, landing pages, angles). When it carries a `note` instead, pass it
+   on once with its link and work from the ads.
+3. One `get_ads` call (`compact: true`, up to 25 ids) on three to six ads per brand, spread across
+   formats: hook tactic, visual format, mechanic (read from `structure` and `breakdown`), offer and
+   where it lands (`product_offer.lands_on`).
 
 Write a short section per brand: what it keeps running (with run lengths), its most common
-structure from `brand_patterns`, and the moves worth borrowing, each with a linked ad. Put it in the
+structure from `brand_patterns`, where it sends traffic (`brand_mix.lands_on`), and the moves worth borrowing, each with a linked ad. Put it in the
 reply, or a file when the client can write files. Offer to keep the best references with `save_ad`
-or on a board (`create_board`, `add_ad_to_board`); write only when the user agrees.
+or on a board (`create_board`, `add_ad_to_board`; under Saved and Boards in the app); write only
+when the user agrees.
 
 ## Rules
 
 - Shares of read ads, run lengths and dates only; never spend, results or "what works for them".
 - Link every ad cited by its `url`.
 - Say the read covers the brand's ads in this library, not everything it has run.
-- Keep calls few: one longest-running page and one `get_ads` call per brand.
+- Keep calls few: the `per_brand` pages, one `limit: 1` page per brand and one `get_ads` call per
+  25 ads.
 
 Done when every direct and admired brand that advertises is followed on Ad Swipe File or handed to the
 user to follow or request, and has its first-read notes. Weekly after that:

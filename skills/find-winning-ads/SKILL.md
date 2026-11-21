@@ -76,4 +76,5 @@ task needs the copy (see the write-hooks-from-ads skill).
 
 Offer, once, to keep the ads the user likes: `save_ad`, or a board named for
 the search (`create_board`, `add_ad_to_board`), with a `set_ad_note` on why
-each is worth studying. Only on a yes.
+each is worth studying. Only on a yes. They show in the app under Saved and
+Boards.

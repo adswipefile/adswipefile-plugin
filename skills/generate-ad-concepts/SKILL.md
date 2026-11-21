@@ -112,8 +112,9 @@ concept:
 
 Then offer to file the references on Ad Swipe File: `create_board` (or an existing one from
 `list_boards`), `add_ad_to_board`, and `set_ad_note` saying which step each ad shows, in the
-client's `workspace` when the user works for several (`list_workspaces`). Only on a yes. Once it is
-filed, offer `share_board` so the user can send the references to a client or team as one link.
+client's `workspace` when the user works for several (`list_workspaces`). Only on a yes. The board
+shows under Boards in the app; `set_brief_properties` with its `board_id` ties each brief to it.
+Once it is filed, offer `share_board` so the user can send the references to a client or team as one link.
 
 Batches: one brief per concept, then the coverage the batch leaves open (personas with no upper
 funnel concept, stages with one trigger moment, angles never briefed). Call the set a roadmap.

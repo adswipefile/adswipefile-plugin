@@ -1,6 +1,6 @@
 ---
 name: creative-strategy
-description: Start here for creative strategy on Meta ads with Ad Swipe File as the evidence. Routes research, ideation, making, review and learning to the right skill, from mapping competitors to concepts, scripts and audits. Use for "help me with creative strategy", "where do I start with my ads", "build a creative strategy for my brand", or any request that spans more than one step of the loop.
+description: Start here for creative strategy on Meta ads with Ad Swipe File as the evidence. Routes research, ideation, making, review and learning to the right skill, from mapping competitors to concepts, clones, briefs and audits. Use for "help me with creative strategy", "where do I start with my ads", "build a creative strategy for my brand", or any request that spans more than one step of the loop.
 ---
 
 # Creative strategy
@@ -41,20 +41,35 @@ to direct you, tell the user and carry on.
 | Research | `map-competitors` | A competitor map: direct, indirect, admired |
 | Research | `track-competitor-ads` | Competitors followed on Ad Swipe File, a first read per brand |
 | Research | `weekly-competitor-review` | A short weekly review of what followed brands launched |
-| Research | `competitor-ads` | One brand's formats, hooks, angles and offers, linked |
+| Research | `competitor-landscape` | Every followed brand's top 10 most-shown ads side by side: persona, format, angle, hook, offer, landing page |
+| Research | `competitor-ads` | One brand's formats, hooks, angles, offers and landing pages, linked |
 | Research | `map-personas` | Personas with anchors, trigger moments and the user's customer words |
 | Research | `find-winning-ads` | Linked reference ads for a niche, format or keyword |
+| Research | `we-need-new-ads` | What competitors and the niche launched this month that the user's brand has not tried, ranked, with the next ads to make |
 | Ideate | `generate-ad-concepts` | Draft concepts, one per anchor, persona and moment |
+| Ideate | `concepts-by-tomorrow` | A batch of concepts on a deadline, from current winners, filed as briefs |
+| Ideate | `clone-winning-ad` | One ad remade for the user's brand as a variant matrix (hook, format, language), one brief |
 | Ideate | `pick-creative-mechanic` | The mechanic each concept uses, with reference ads |
 | Ideate | `write-hooks-from-ads` | Original hooks and headlines in patterns from real ads |
 | Review | `audit-ad-creative` | Feedback on one ad and an iteration brief |
 | Learn | `teach-ad-breakdown` | A breakdown of one ad and the takeaway to reuse |
 | Learn | `review-saved-ads` | What the user's saved ads have in common |
 | Learn | `record-creative-learning` | A scoped learning from the user's own results |
+| All | `creative-sprint` | One run from a sentence to a filed pack: competitors, winners, 10 briefs, a shared board |
+
+## Start from the problem
+
+Most requests name a moment, not a stage. Route them straight:
+
+- "Clone this ad", "remake this for us", a pasted ad link: `clone-winning-ad`.
+- "N concepts by tomorrow", a count and a deadline: `concepts-by-tomorrow`.
+- "We need new ads", "our ads are stale", "what should we make next": `we-need-new-ads`.
+- "Be my creative team", "run a sprint", research to briefs in one go: `creative-sprint`.
 
 ## Usual order for a new brand
 
-1. `map-competitors`, then `track-competitor-ads` to follow them and read what they keep running.
+1. `map-competitors`, then `track-competitor-ads` to follow them and read what they keep running,
+   then `competitor-landscape` for what wins across all of them.
 2. `map-personas` from the user's reviews and customer words.
 3. `generate-ad-concepts`, picking a mechanic per concept with `pick-creative-mechanic` and hooks
    with `write-hooks-from-ads`.
@@ -63,13 +78,16 @@ to direct you, tell the user and carry on.
 6. Every week, `weekly-competitor-review`, by hand or as a scheduled task.
 
 Pick up at any stage the user is already at. A single question ("what is this brand running?")
-goes straight to its skill.
+goes straight to its skill; one across every competitor ("what works for my competitors?") goes
+to `competitor-landscape`.
 
 ## Rules
 
 - Outputs go in the reply, or in a file when the client can write files. Keep references on
-  Ad Swipe File (`save_ad`, `add_ad_to_board`, `create_board`, `set_ad_note`) only when the user asks
-  or agrees.
+  Ad Swipe File (`save_ad`, `add_ad_to_board`, `create_board`, `set_ad_note`) and briefs
+  (`write_brief`) only when the user asks or agrees.
+- Say where each write lands in the app, so the agent and the site stay one workspace: a brief
+  under Briefs, a board under Boards, a save under Saved, a follow under Track.
 - Every cited ad is linked by its `url`. The library holds no spend, ROAS or conversions: a long
   run is a reason to study an ad, never proof it worked.
 - Results-type calls count against the user's calls: read samples with `get_ads`, keep calls few.

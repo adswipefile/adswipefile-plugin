@@ -85,14 +85,18 @@ Its tactic comes from `list_hooks`; each ad carries its `hook_tactic` and `hook_
 | Job | Ad Swipe File tools |
 | --- | --- |
 | Find references | `search_library`, `list_ads` (`niche`, `visual_format`, `hook`, `season`, `awareness`, `mechanic`, `status`, `min_days`, `followed`, `sort`) |
-| One brand | `list_ads` with `brand` (first page carries `brand_patterns`), `list_brands` |
-| Read ads | `get_ads` (up to 25 per call), `get_ad` (`breakdown` with its `structure`, `why_it_works`, `run`) |
+| One brand | `list_ads` with `brand` (first page carries `brand_patterns` and `brand_mix`: offers, landing pages, angles), `get_brand` (`landing_pages`), `list_brands` |
+| Every followed brand | `list_ads` with `followed: true` and `per_brand` (each brand's top N, most shown, one card per creative) |
+| Read ads | `get_ads` (up to 25 per call, `compact: true` for many), `get_ad` (`breakdown` with its `structure`, `why_it_works`, `run`) |
+| Remake an ad | `get_ad` without `compact`: `remix_spec` (`hook`, `angle`, `offer`, `structure`, `beats`, `scenes`, `script`, and `modes` `same_angle`, `new_format`, `other_niche`, each with `keep`, `change`, `brief`) and `make_yours.template` (the script with [slots]) |
+| A brand's weeks | `list_brand_activity` (`weeks` 1 to 12: launched, stopped, climbing into its most shown, tests resolved; its `ad_ids` are Meta ids, not library ids) |
 | Vocabularies | `list_visual_formats`, `get_format`, `list_hooks`, `list_niches`, `list_formats` |
 | Niche direction | `get_trends` (share of a niche's active ads by format, hook and asset type, 30 days against the 30 before; what brands make more of, never what performs) |
 | Brand by website | `get_brand_by_domain` |
 | Similar ads | `find_similar_ads` (other brands' ads with the same hook, format or niche) |
 | Competitors | `follow_brand`, `list_followed_brands`, `list_followed_ads`, `unfollow_brand` |
 | Keep references | `save_ad`, `set_ad_note`, `create_board`, `add_ad_to_board`, `list_saved_ads`, `list_boards`, `share_board` |
+| Briefs | `write_brief` (ads embedded as `![Brand · label](ad:<ad id>)`), `set_brief_properties` (brand, owner, `board_id`), `list_briefs`, `get_brief`, `set_brief_status` |
 | Clients apart | `list_workspaces`, then `workspace` on saves, follows and boards |
 | Send to a client | `share_board` (and `unshare_board`) |
 | Report a gap | `submit_feedback` (a missing brand, a wrong tag, a broken result) |
@@ -100,7 +104,10 @@ Its tactic comes from `list_hooks`; each ad carries its `hook_tactic` and `hook_
 
 ## Writes
 
-- Ad Swipe File writes change only the user's own saves, notes, follows and boards. Make one only when
-  the user asked for it or agreed.
+- Ad Swipe File writes change only the user's own saves, notes, follows, boards and briefs. Make one
+  only when the user asked for it or agreed.
+- Each lands in the app, in the same workspace: a brief under Briefs, a board under Boards, a save
+  under Saved, a follow under Track (adswipefile.com/app/track). Say where, with the `url` the tool
+  returned.
 - Strategy outputs (competitor maps, personas, concepts, scripts, learnings) go in the reply, or a
   file when the client can write files. They are drafts the user approves.
